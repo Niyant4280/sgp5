@@ -12,7 +12,19 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [react(), expressPlugin()],
+  plugins: [
+    react({
+      swc: {
+        jsc: {
+          parser: {
+            syntax: "typescript",
+            tsx: true,
+          },
+        },
+      },
+    }),
+    expressPlugin()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
