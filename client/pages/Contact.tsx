@@ -56,7 +56,7 @@ export default function Contact() {
       title: "Call Us",
       value: "+91-9876-543-210",
       description: "24/7 customer support",
-      color: "text-accent",
+      color: "text-green-600 dark:text-green-400",
     },
     {
       icon: MapPin,
@@ -70,7 +70,7 @@ export default function Contact() {
       title: "Office Hours",
       value: "Mon-Fri 9AM-6PM",
       description: "Business hours",
-      color: "text-accent",
+      color: "text-blue-600 dark:text-blue-400",
     },
   ];
 
@@ -325,7 +325,7 @@ export default function Contact() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Need Immediate Help?
@@ -333,11 +333,11 @@ export default function Contact() {
           <p className="text-xl mb-8 text-white/90">
             For urgent issues or emergencies, contact us directly
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button
               variant="secondary"
               size="lg"
-              className="shadow-md hover:shadow-xl transition-all duration-200 rounded-lg"
+              className="shadow-md hover:shadow-xl transition-all duration-200 rounded-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 font-semibold px-8 py-3"
               asChild
             >
               <a href="tel:+919876543210">
@@ -345,20 +345,100 @@ export default function Contact() {
                 Emergency Helpline
               </a>
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary shadow-md hover:shadow-xl transition-all duration-200 rounded-lg"
-              asChild
-            >
-              <a href="mailto:emergency@busनियोजक.com">
-                <Mail className="h-5 w-5 mr-2" />
-                Emergency Email
-              </a>
-            </Button>
           </div>
         </div>
       </section>
+
+      {/* Advertisement Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+              Partner with <span className="text-black dark:text-white">Bus</span><span className="text-red-600 dark:text-red-400">नियोजक</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Reach thousands of daily commuters and grow your business with our advertising solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Benefits */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 flex-shrink-0">
+                    <Users className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Massive Reach</h3>
+                    <p className="text-muted-foreground">Connect with over 10,000+ daily active users across Delhi NCR</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Targeted Advertising</h3>
+                    <p className="text-muted-foreground">Place ads on specific routes and bus stops for maximum relevance</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 flex-shrink-0">
+                    <TrendingUp className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Real-time Analytics</h3>
+                    <p className="text-muted-foreground">Track your ad performance with detailed insights and metrics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - CTA Card */}
+            <div>
+              <Card className="shadow-2xl border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/20 rounded-3xl overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="text-center mb-6">
+                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                      <Globe className="h-10 w-10" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Ready to Advertise?</h3>
+                    <p className="text-muted-foreground mb-6">
+                      Join leading brands who trust us to deliver their message to the right audience
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4 mb-6">
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span className="text-sm">Multiple ad formats available</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span className="text-sm">Flexible pricing options</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span className="text-sm">Dedicated account manager</span>
+                    </div>
+                  </div>
     </div>
   );
 }
+
+                  <Button
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+                    asChild
+                  >
+                    <Link to="/advertise-with-us">
+                      <Heart className="h-5 w-5 mr-2" />
+                      Connect With Us
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
