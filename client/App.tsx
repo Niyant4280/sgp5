@@ -15,6 +15,8 @@ import AdminDashboard from "./pages/AdminDashboard";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AdvertiseWithUs from "./pages/AdvertiseWithUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/advertise-with-us" element={<AdvertiseWithUs />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
           {/* Placeholder routes for future implementation */}
           <Route
             path="/advertise"
@@ -43,20 +47,6 @@ const App = () => (
               <div className="p-8 text-center">
                 Advertisement submission form coming soon!
               </div>
-            }
-          />
-          <Route
-            path="/terms"
-            element={
-              <div className="p-8 text-center">
-                Terms of Service coming soon!
-              </div>
-            }
-          />
-          <Route
-            path="/privacy"
-            element={
-              <div className="p-8 text-center">Privacy Policy coming soon!</div>
             }
           />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

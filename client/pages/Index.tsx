@@ -321,10 +321,10 @@ export default function Index() {
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm">
-                  Privacy Policy
+                  <Link to="/privacy">Privacy Policy</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
-                  Terms of Service
+                  <Link to="/terms">Terms of Service</Link>
                 </Button>
               </div>
             </div>
@@ -342,17 +342,12 @@ export default function Index() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/advertise" className="hover:text-foreground">
+                  <Link to="/advertise-with-us" className="hover:text-foreground">
                     Advertisement
                   </Link>
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-foreground">
                     Help Center
                   </a>
                 </li>
