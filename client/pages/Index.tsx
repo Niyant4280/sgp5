@@ -341,26 +341,6 @@ export default function Index() {
                     Route Planning
                   </Link>
                 </li>
-                <li>
-                  <Link to="/advertise-with-us" className="hover:text-foreground">
-                    Advertisement
-                  </Link>
-                </li>
-              </ul>
-                  <Link to="/contact" className="hover:text-foreground">
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="hover:text-foreground">
-                    Contact Us
-                  </Link>
-                </li>
-                    API Documentation
-                  </a>
-                </li>
-              </ul>
-            </div>
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
