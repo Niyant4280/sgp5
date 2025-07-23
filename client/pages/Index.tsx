@@ -361,6 +361,21 @@ export default function Index() {
                 </li>
               </ul>
             </div>
+            <div>
+              <h3 className="font-semibold mb-4">Support</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link to="/contact" className="hover:text-foreground">
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-foreground">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>
