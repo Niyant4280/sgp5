@@ -17,7 +17,11 @@ import {
   HeadphonesIcon,
   Globe,
   Heart,
+  Users,
+  TrendingUp,
+  CheckCircle,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -423,9 +427,6 @@ export default function Contact() {
                       <span className="text-sm">Dedicated account manager</span>
                     </div>
                   </div>
-    </div>
-  );
-}
 
                   <Button
                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
@@ -442,3 +443,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
