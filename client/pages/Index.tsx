@@ -347,17 +347,15 @@ export default function Index() {
                   </Link>
                 </li>
               </ul>
-            </div>
+                  <Link to="/contact" className="hover:text-foreground">
                     Help Center
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground">
+                  <Link to="/contact" className="hover:text-foreground">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-foreground">
                     API Documentation
                   </a>
                 </li>
