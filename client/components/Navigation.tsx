@@ -16,7 +16,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Brand */}
-          <div className="flex items-center space-x-4 flex-1">
+          <div className="flex items-center space-x-4">
             <Link to="/" className="flex items-center space-x-2" onClick={e => { e.preventDefault(); window.location.href = '/'; }}>
               <div className="bg-red-600 dark:bg-red-500 text-white p-2 rounded-lg shadow-lg hover:bg-red-700 dark:hover:bg-red-600 transition-colors">
                 <Bus className="h-6 w-6" />
@@ -29,7 +29,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 flex-2 justify-center">
+          <div className="hidden md:flex items-center space-x-6">
             <Link
               to="/search"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -75,7 +75,7 @@ export default function Navigation() {
           </div>
 
           {/* Theme Toggle & Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-3 flex-1 justify-end">
+          <div className="hidden md:flex items-center space-x-3">
             <ThemeToggle />
             <Button variant="ghost" size="sm" className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white" asChild>
               <Link to="/login">
@@ -86,7 +86,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2 ml-auto">
+          <div className="md:hidden flex items-center space-x-2">
             <ThemeToggle />
             <Button
               variant="ghost"
