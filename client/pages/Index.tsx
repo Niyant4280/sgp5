@@ -321,10 +321,10 @@ export default function Index() {
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm">
-                  Privacy Policy
+                  <Link to="/privacy">Privacy Policy</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
-                  Terms of Service
+                  <Link to="/terms">Terms of Service</Link>
                 </Button>
               </div>
             </div>
@@ -342,7 +342,7 @@ export default function Index() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/advertise" className="hover:text-foreground">
+                  <Link to="/advertise-with-us" className="hover:text-foreground">
                     Advertisement
                   </Link>
                 </li>
@@ -357,13 +357,9 @@ export default function Index() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground">
+                  <Link to="/contact" className="hover:text-foreground">
                     Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground">
-                    API Documentation
+                  </Link>
                   </a>
                 </li>
               </ul>
