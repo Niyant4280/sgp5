@@ -360,7 +360,6 @@ export default function Index() {
                   <Link to="/contact" className="hover:text-foreground">
                     Contact Us
                   </Link>
-                  </a>
                 </li>
               </ul>
             </div>
