@@ -103,13 +103,12 @@ export default function Navigation() {
             </Link>
           </div>
 
-          {/* Theme Toggle & Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-3 flex-1 justify-end">
-            <ThemeToggle />
+          {/* Auth Buttons */}
+          <div className="hidden lg:flex items-center space-x-3 flex-1 justify-end">
             <Button
               variant="ghost"
               size="sm"
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               asChild
             >
               <Link to="/login">
