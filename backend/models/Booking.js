@@ -386,10 +386,10 @@ bookingSchema.methods.checkIn = function(location, checkedInBy) {
     throw new Error('Only confirmed bookings can be checked in');
   }
   
-  this.checkIn.isCheckedIn = true;
-  this.checkIn.checkedInAt = new Date();
-  this.checkIn.checkedInBy = checkedInBy;
-  this.checkIn.location = location;
+  this.checkInDetails.isCheckedIn = true;
+  this.checkInDetails.checkedInAt = new Date();
+  this.checkInDetails.checkedInBy = checkedInBy;
+  this.checkInDetails.location = location;
   
   return this;
 };
