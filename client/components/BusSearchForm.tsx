@@ -146,8 +146,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 </form>
 
                 {/* Popular Buses */}
-                <div className="mt-8">
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                <div className="mt-6 sm:mt-8">
+                  <p className="text-sm text-gray-500 mb-3">
                     Popular buses:
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -156,7 +156,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                         <Badge
                           key={bus}
                           variant="outline"
-                          className="cursor-pointer hover:bg-red-50 dark:hover:bg-gray-700 transition-colors"
+                          className="cursor-pointer hover:bg-red-50 transition-colors text-xs sm:text-sm"
                           onClick={() => setBusNumber(bus)}
                         >
                           {bus}
