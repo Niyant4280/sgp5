@@ -96,7 +96,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   placeholder="From Stop"
                   value={fromStop}
                   onChange={(e) => setFromStop(e.target.value)}
-                  className="text-xl h-16 max-w-md w-full text-center bg-white text-red-600 placeholder:text-red-300 border-0 focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
+                  className="text-xl h-16 max-w-md w-full text-center bg-white text-white placeholder:text-red-300 border border-white focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
                 />
                 <div className="flex justify-center">
                   <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 shadow-lg">
