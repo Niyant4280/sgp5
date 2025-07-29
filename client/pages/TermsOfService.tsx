@@ -64,7 +64,7 @@ export default function TermsOfService() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-1">
+                    <h4 className="font-semibold text-blue-800  mb-1">
                       Agreement to Terms
                     </h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">
