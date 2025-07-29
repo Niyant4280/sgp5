@@ -306,7 +306,7 @@ export default function FAQ() {
                       className="border-0 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                        <span className="text-left font-semibold text-lg text-white">
+                        <span className="text-left font-semibold text-lg text-gray-900">
                           {faq.question}
                         </span>
                       </AccordionTrigger>
