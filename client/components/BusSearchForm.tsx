@@ -256,8 +256,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       {/* Features */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="text-center p-4">
-          <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Clock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Clock className="h-6 w-6 text-red-600 dark:text-red-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Real-time Updates
