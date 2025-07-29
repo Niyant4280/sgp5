@@ -74,4 +74,13 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+// Ensure root is only created once
+const rootElement = document.getElementById("root")!;
+let root: ReturnType<typeof createRoot> | null = null;
+
+if (!rootElement.hasChildNodes()) {
+  root = createRoot(rootElement);
+  root.render(<App />);
+} else if (root) {
+  root.render(<App />);
+}
