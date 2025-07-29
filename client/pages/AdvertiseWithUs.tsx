@@ -55,7 +55,11 @@ export default function AdvertiseWithUs() {
     {
       title: "Route Sponsorship",
       description: "Sponsor entire bus routes for maximum brand exposure",
-      features: ["Brand association", "Route naming rights", "Premium visibility"],
+      features: [
+        "Brand association",
+        "Route naming rights",
+        "Premium visibility",
+      ],
       price: "₹25,000/month",
       icon: Target,
     },
@@ -67,7 +71,8 @@ export default function AdvertiseWithUs() {
       name: "Starter Package",
       price: "₹10,000",
       period: "/month",
-      description: "Perfect for small businesses starting their advertising journey",
+      description:
+        "Perfect for small businesses starting their advertising journey",
       features: [
         "2 Bus stop displays",
         "Basic analytics",
@@ -126,14 +131,15 @@ export default function AdvertiseWithUs() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-red-600 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Advertise with <span className="text-white">Bus</span>
               <span className="text-red-200">नियोजक</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Reach thousands of daily commuters and grow your business with our premium advertising solutions
+              Reach thousands of daily commuters and grow your business with our
+              premium advertising solutions
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge className="bg-white/20 text-white border-white/30 px-4 py-2 text-sm font-semibold">
@@ -162,7 +168,9 @@ export default function AdvertiseWithUs() {
                 <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <stat.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
-                <div className="text-3xl font-bold text-foreground dark:text-white mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold text-foreground dark:text-white mb-2">
+                  {stat.value}
+                </div>
                 <div className="text-muted-foreground">{stat.label}</div>
               </div>
             ))}
@@ -171,20 +179,24 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Ad Formats Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
               Advertising Formats
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose from multiple advertising formats to reach your target audience effectively
+              Choose from multiple advertising formats to reach your target
+              audience effectively
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {adFormats.map((format, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white dark:bg-gray-800 rounded-2xl">
+              <Card
+                key={index}
+                className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white dark:bg-gray-800 rounded-2xl"
+              >
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="bg-gradient-to-br from-blue-500 to-purple-500 text-white p-3 rounded-xl">
@@ -192,7 +204,9 @@ export default function AdvertiseWithUs() {
                     </div>
                     <div>
                       <CardTitle className="text-xl">{format.title}</CardTitle>
-                      <p className="text-muted-foreground">{format.description}</p>
+                      <p className="text-muted-foreground">
+                        {format.description}
+                      </p>
                     </div>
                   </div>
                 </CardHeader>
@@ -206,7 +220,9 @@ export default function AdvertiseWithUs() {
                     ))}
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">{format.price}</span>
+                    <span className="text-2xl font-bold text-primary">
+                      {format.price}
+                    </span>
                     <Button variant="outline" size="sm">
                       Learn More
                     </Button>
@@ -219,7 +235,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
@@ -250,7 +266,9 @@ export default function AdvertiseWithUs() {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
                   <div className="mb-4">
-                    <span className="text-4xl font-bold text-primary">{plan.price}</span>
+                    <span className="text-4xl font-bold text-primary">
+                      {plan.price}
+                    </span>
                     <span className="text-muted-foreground">{plan.period}</span>
                   </div>
                   <p className="text-muted-foreground">{plan.description}</p>
@@ -282,14 +300,15 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Requirements Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
               Partnership Requirements
             </h2>
             <p className="text-xl text-muted-foreground">
-              Everything you need to know to get started with our advertising platform
+              Everything you need to know to get started with our advertising
+              platform
             </p>
           </div>
 
@@ -341,35 +360,55 @@ export default function AdvertiseWithUs() {
                       <span className="text-blue-600 font-bold text-sm">1</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold">Application Submission (Day 1)</h4>
-                      <p className="text-sm text-muted-foreground">Submit your application with required documents</p>
+                      <h4 className="font-semibold">
+                        Application Submission (Day 1)
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Submit your application with required documents
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-2 flex-shrink-0">
-                      <span className="text-green-600 font-bold text-sm">2</span>
+                      <span className="text-green-600 font-bold text-sm">
+                        2
+                      </span>
                     </div>
                     <div>
-                      <h4 className="font-semibold">Review & Approval (2-3 Days)</h4>
-                      <p className="text-sm text-muted-foreground">Our team reviews your application and content</p>
+                      <h4 className="font-semibold">
+                        Review & Approval (2-3 Days)
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Our team reviews your application and content
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-2 flex-shrink-0">
-                      <span className="text-purple-600 font-bold text-sm">3</span>
+                      <span className="text-purple-600 font-bold text-sm">
+                        3
+                      </span>
                     </div>
                     <div>
-                      <h4 className="font-semibold">Campaign Setup (1-2 Days)</h4>
-                      <p className="text-sm text-muted-foreground">Configure your campaign and schedule deployment</p>
+                      <h4 className="font-semibold">
+                        Campaign Setup (1-2 Days)
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Configure your campaign and schedule deployment
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="bg-orange-100 dark:bg-orange-900/20 rounded-full p-2 flex-shrink-0">
-                      <span className="text-orange-600 font-bold text-sm">4</span>
+                      <span className="text-orange-600 font-bold text-sm">
+                        4
+                      </span>
                     </div>
                     <div>
                       <h4 className="font-semibold">Go Live (Day 7)</h4>
-                      <p className="text-sm text-muted-foreground">Your ads go live across selected locations</p>
+                      <p className="text-sm text-muted-foreground">
+                        Your ads go live across selected locations
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -380,7 +419,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Campaign?
@@ -414,7 +453,8 @@ export default function AdvertiseWithUs() {
           </div>
           <div className="mt-8 text-white/80">
             <p className="text-sm">
-              Or visit our office: New Delhi, India | Business Hours: Mon-Fri 9AM-6PM
+              Or visit our office: New Delhi, India | Business Hours: Mon-Fri
+              9AM-6PM
             </p>
           </div>
         </div>
