@@ -195,7 +195,7 @@ export default function AdvertiseWithUs() {
             {adFormats.map((format, index) => (
               <Card
                 key={index}
-                className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white dark:bg-gray-800 rounded-2xl"
+                className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white rounded-2xl"
               >
                 <CardHeader>
                   <div className="flex items-center space-x-4">
@@ -253,7 +253,7 @@ export default function AdvertiseWithUs() {
                 className={`relative shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ${
                   plan.popular
                     ? "border-2 border-blue-500 scale-105 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20"
-                    : "border-0 bg-white dark:bg-gray-800"
+                    : "border-0 bg-white"
                 }`}
               >
                 {plan.popular && (
@@ -313,7 +313,7 @@ export default function AdvertiseWithUs() {
           </div>
 
           <div className="space-y-8">
-            <Card className="shadow-lg border-0 bg-white dark:bg-gray-800 rounded-2xl">
+            <Card className="shadow-lg border-0 bg-white rounded-2xl">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
                   <Shield className="h-6 w-6 text-blue-600" />
@@ -346,7 +346,7 @@ export default function AdvertiseWithUs() {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-white dark:bg-gray-800 rounded-2xl">
+            <Card className="shadow-lg border-0 bg-white rounded-2xl">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
                   <Clock className="h-6 w-6 text-green-600" />
