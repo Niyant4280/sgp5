@@ -143,7 +143,7 @@ export default function Contact() {
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="text-center border-0 shadow-lg bg-white/90 dark:bg-gray-900/80 transition-shadow hover:shadow-2xl rounded-2xl"
+                className="text-center border-0 shadow-lg bg-white/90 transition-shadow hover:shadow-2xl rounded-2xl"
               >
                 <CardContent className="pt-10 pb-8">
                   <div
