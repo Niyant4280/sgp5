@@ -115,7 +115,7 @@ export default function FAQ() {
       id: "mobile",
       title: "Mobile App & Website",
       icon: Smartphone,
-      color: "from-purple-500 to-pink-500",
+      color: "from-black to-red-600",
       questions: [
         {
           question: "Is there a mobile app available?",
