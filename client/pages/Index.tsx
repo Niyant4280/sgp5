@@ -93,7 +93,7 @@ export default function Index() {
           </div>
 
           {/* Search Form */}
-          <div className="mb-16">
+          <div className="mb-8 sm:mb-12 lg:mb-16">
             <BusSearchForm onSearch={handleSearch} />
           </div>
 
