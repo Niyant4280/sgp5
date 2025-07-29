@@ -176,7 +176,7 @@ export default function FAQ() {
         {
           question: "How can I report incorrect bus information?",
           answer:
-            "Please use our contact form or email us at support@busन��योजक.com with specific details about the incorrect information. Include bus number, route, and what needs to be corrected. We typically fix issues within 24 hours.",
+            "Please use our contact form or email us at support@busनियोजक.com with specific details about the incorrect information. Include bus number, route, and what needs to be corrected. We typically fix issues within 24 hours.",
         },
         {
           question: "Can I suggest new features?",
@@ -231,7 +231,7 @@ export default function FAQ() {
                 <MessageCircle className="h-3 w-3 mr-1" />
                 24/7 Support
               </Badge>
-              <Badge className="text-sm bg-red-700 text-white hover:bg-red-800 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-white text-red-500 hover:bg-gray-50 transition-colors px-4 py-2 font-semibold">
                 <Users className="h-3 w-3 mr-1" />
                 Community Help
               </Badge>
