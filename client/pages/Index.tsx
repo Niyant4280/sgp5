@@ -285,16 +285,16 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 bg-[rgba(220,38,38,1)] text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90">
-            Join thousands of users already using{" "}
+            Join thousands of users already using&nbsp;
             <span className="font-bold text-white">Bus</span>
-            <span className="font-bold text-red-200">नियोजक</span> for their
-            daily transportation needs.
+            <span className="font-bold text-white">नियोजक</span> for their daily
+            transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -305,7 +305,9 @@ export default function Index() {
             >
               <Link to="/search">
                 <Search className="h-5 w-5 mr-2" />
-                Start Searching
+                <span className="text-[rgba(220,38,38,1)]">
+                  Start Searching
+                </span>
               </Link>
             </Button>
           </div>
@@ -323,7 +325,7 @@ export default function Index() {
                 </div>
                 <span className="text-xl font-bold text-foreground">
                   <span className="text-black dark:text-white">Bus</span>
-                  <span className="text-primary">नियोजक</span>
+                  <span className="text-[rgba(220,38,38,1)]">नियोजक</span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-4">

@@ -145,8 +145,8 @@ export default function BusSearch() {
       } else {
         console.error("Search failed:", result.error);
         // For demo purposes, show mock data if API fails
-        const matchingRoutes = mockRoutes.filter(route =>
-          route.busNumber.toLowerCase().includes(data.busNumber.toLowerCase())
+        const matchingRoutes = mockRoutes.filter((route) =>
+          route.busNumber.toLowerCase().includes(data.busNumber.toLowerCase()),
         );
         setSearchResults(matchingRoutes);
         if (matchingRoutes.length > 0) {
@@ -156,8 +156,8 @@ export default function BusSearch() {
     } catch (error) {
       console.error("Search error:", error);
       // For demo purposes, show mock data if API fails
-      const matchingRoutes = mockRoutes.filter(route =>
-        route.busNumber.toLowerCase().includes(data.busNumber.toLowerCase())
+      const matchingRoutes = mockRoutes.filter((route) =>
+        route.busNumber.toLowerCase().includes(data.busNumber.toLowerCase()),
       );
       setSearchResults(matchingRoutes);
       if (matchingRoutes.length > 0) {
@@ -213,14 +213,17 @@ export default function BusSearch() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={(e) => {
-                  e.preventDefault();
-                  const formData = new FormData(e.target as HTMLFormElement);
-                  const busNumber = formData.get("busNumber") as string;
-                  if (busNumber.trim()) {
-                    handleSearch("number", { busNumber: busNumber.trim() });
-                  }
-                }} className="space-y-4">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.target as HTMLFormElement);
+                    const busNumber = formData.get("busNumber") as string;
+                    if (busNumber.trim()) {
+                      handleSearch("number", { busNumber: busNumber.trim() });
+                    }
+                  }}
+                  className="space-y-4"
+                >
                   <div className="space-y-2">
                     <label htmlFor="bus-number" className="text-sm font-medium">
                       Enter Bus Number
@@ -234,7 +237,10 @@ export default function BusSearch() {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
+                  <Button
+                    type="submit"
+                    className="w-full bg-[rgba(220,38,38,1)] hover:bg-[rgba(220,38,38,0.9)]"
+                  >
                     <Bus className="h-4 w-4 mr-2" />
                     Find This Bus
                   </Button>
@@ -391,7 +397,8 @@ export default function BusSearch() {
                   <AlertCircle className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                   <h3 className="font-medium mb-2">Bus Not Found</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    The bus number you entered was not found. Please check the number and try again.
+                    The bus number you entered was not found. Please check the
+                    number and try again.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-2 justify-center">
                     <Button
@@ -449,7 +456,8 @@ export default function BusSearch() {
                         Bus Route Visualization
                       </h3>
                       <p className="text-muted-foreground">
-                        Search for a bus number to see its route and live location
+                        Search for a bus number to see its route and live
+                        location
                       </p>
                     </div>
                   </div>

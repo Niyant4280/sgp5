@@ -119,7 +119,7 @@ export default function Contact() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
-              Get in <span className="text-primary">Touch</span>
+              Get in <span className="text-[rgba(220,38,38,1)]">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Have questions about{" "}
