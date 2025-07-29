@@ -311,7 +311,7 @@ export default function FAQ() {
                         </span>
                       </AccordionTrigger>
                       <AccordionContent className="px-6 pb-6">
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-white/90 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
