@@ -67,7 +67,7 @@ export default function TermsOfService() {
                     <h4 className="font-semibold text-blue-800  mb-1">
                       Agreement to Terms
                     </h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">
+                    <p className="text-sm text-blue-700 ">
                       If you do not agree to abide by the above, please do not use this service.
                     </p>
                   </div>
