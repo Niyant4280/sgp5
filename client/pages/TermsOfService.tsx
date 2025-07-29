@@ -169,7 +169,7 @@ export default function TermsOfService() {
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• All trademarks, logos, and service marks are our property</li>
-                  <li>• You may not copy, modify, or distribute our content without permission</li>
+                  <li>�� You may not copy, modify, or distribute our content without permission</li>
                   <li>• You may use our service for personal, non-commercial purposes</li>
                 </ul>
               </div>
@@ -190,7 +190,7 @@ export default function TermsOfService() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="bg-red-50  p-4 rounded-lg border border-red-200 dark:border-red-800">
+              <div className="bg-red-50  p-4 rounded-lg border border-red-200 ">
                 <div className="flex items-start space-x-3">
                   <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
                   <div>
