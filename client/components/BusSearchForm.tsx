@@ -50,7 +50,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           <div className="bg-gradient-to-r from-red-600 to-red-800 p-3 rounded-2xl shadow-lg">
             <Search className="h-8 w-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-black to-red-600 dark:from-white dark:to-red-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-red-700 to-red-500 dark:from-red-400 dark:to-red-200 bg-clip-text text-transparent">
             Find Your Bus
           </h2>
         </div>
