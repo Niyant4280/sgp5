@@ -43,18 +43,18 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto bg-red-500 rounded-3xl p-8">
       {/* Header Section */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-3 mb-4">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-2xl shadow-lg">
+          <div className="bg-red-500 p-3 rounded-2xl shadow-lg">
             <Search className="h-8 w-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
             Find Your Bus
           </h2>
         </div>
-        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="text-lg text-white/90 max-w-2xl mx-auto">
           Search by bus number or plan your route between stops. Get real-time
           updates and never miss your ride.
         </p>
@@ -65,16 +65,14 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
         {quickActions.map((action, index) => (
           <Card
             key={index}
-            className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700"
+            className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/20 backdrop-blur-sm"
           >
             <CardContent className="p-4 text-center">
-              <action.icon className="h-6 w-6 mx-auto mb-2 text-blue-600 dark:text-blue-400" />
-              <div className="text-sm font-semibold text-gray-900 dark:text-white">
+              <action.icon className="h-6 w-6 mx-auto mb-2 text-white" />
+              <div className="text-sm font-semibold text-white">
                 {action.label}
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">
-                {action.desc}
-              </div>
+              <div className="text-xs text-white/80">{action.desc}</div>
             </CardContent>
           </Card>
         ))}
@@ -84,13 +82,13 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       <Card className="border-0 shadow-2xl bg-white dark:bg-gray-900 rounded-3xl overflow-hidden">
         <CardContent className="p-0">
           {/* Tab Selection */}
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+          <div className="bg-red-500 p-6">
             <div className="flex gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-2">
               <button
                 onClick={() => setActiveTab("number")}
                 className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
                   activeTab === "number"
-                    ? "bg-white text-blue-600 shadow-lg font-semibold"
+                    ? "bg-white text-red-600 shadow-lg font-semibold"
                     : "text-white hover:bg-white/10"
                 }`}
               >
@@ -101,7 +99,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 onClick={() => setActiveTab("route")}
                 className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
                   activeTab === "route"
-                    ? "bg-white text-purple-600 shadow-lg font-semibold"
+                    ? "bg-white text-black shadow-lg font-semibold"
                     : "text-white hover:bg-white/10"
                 }`}
               >
@@ -132,7 +130,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                       placeholder="e.g., 101, AC-42, DLB-205"
                       value={busNumber}
                       onChange={(e) => setBusNumber(e.target.value)}
-                      className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                      className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-red-500 dark:focus:border-red-400 transition-colors bg-gray-50 dark:bg-gray-800"
                     />
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   </div>
@@ -140,7 +138,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   <Button
                     type="submit"
                     disabled={!busNumber.trim()}
-                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-14 text-lg font-semibold bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Zap className="h-5 w-5 mr-2" />
                     Track This Bus
@@ -158,7 +156,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                         <Badge
                           key={bus}
                           variant="outline"
-                          className="cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+                          className="cursor-pointer hover:bg-red-50 dark:hover:bg-gray-700 transition-colors"
                           onClick={() => setBusNumber(bus)}
                         >
                           {bus}
@@ -187,13 +185,13 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                         placeholder="From (Starting point)"
                         value={fromStop}
                         onChange={(e) => setFromStop(e.target.value)}
-                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-purple-500 dark:focus:border-purple-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-red-500 dark:focus:border-red-400 transition-colors bg-gray-50 dark:bg-gray-800"
                       />
                       <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-green-500" />
                     </div>
 
                     <div className="flex justify-center">
-                      <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-full shadow-lg">
+                      <div className="bg-gradient-to-r from-red-700 to-black p-3 rounded-full shadow-lg">
                         <ArrowRight className="h-5 w-5 text-white" />
                       </div>
                     </div>
@@ -204,7 +202,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                         placeholder="To (Destination)"
                         value={toStop}
                         onChange={(e) => setToStop(e.target.value)}
-                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-purple-500 dark:focus:border-purple-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-red-500 dark:focus:border-red-400 transition-colors bg-gray-50 dark:bg-gray-800"
                       />
                       <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-red-500" />
                     </div>
@@ -213,7 +211,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   <Button
                     type="submit"
                     disabled={!fromStop.trim() || !toStop.trim()}
-                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-14 text-lg font-semibold bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <NavigationIcon className="h-5 w-5 mr-2" />
                     Find Best Routes
@@ -256,8 +254,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       {/* Features */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="text-center p-4">
-          <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Clock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Clock className="h-6 w-6 text-red-600 dark:text-red-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Real-time Updates
@@ -267,8 +265,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </p>
         </div>
         <div className="text-center p-4">
-          <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <MapPin className="h-6 w-6 text-black dark:text-gray-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Smart Routing
@@ -278,8 +276,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </p>
         </div>
         <div className="text-center p-4">
-          <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Zap className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Zap className="h-6 w-6 text-red-600 dark:text-red-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Instant Results

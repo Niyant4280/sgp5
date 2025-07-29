@@ -31,7 +31,7 @@ export default function FAQ() {
       id: "general",
       title: "General Information",
       icon: HelpCircle,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "What is Busनियोजक?",
@@ -59,7 +59,7 @@ export default function FAQ() {
       id: "search",
       title: "Bus Search & Routes",
       icon: Search,
-      color: "from-green-500 to-emerald-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How do I search for a specific bus?",
@@ -87,7 +87,7 @@ export default function FAQ() {
       id: "tracking",
       title: "Live Tracking",
       icon: MapPin,
-      color: "from-red-500 to-orange-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How does live bus tracking work?",
@@ -115,7 +115,7 @@ export default function FAQ() {
       id: "mobile",
       title: "Mobile App & Website",
       icon: Smartphone,
-      color: "from-purple-500 to-pink-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "Is there a mobile app available?",
@@ -143,7 +143,7 @@ export default function FAQ() {
       id: "account",
       title: "Account & Privacy",
       icon: Shield,
-      color: "from-yellow-500 to-amber-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "Do I need to create an account?",
@@ -171,7 +171,7 @@ export default function FAQ() {
       id: "support",
       title: "Support & Feedback",
       icon: Users,
-      color: "from-indigo-500 to-blue-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How can I report incorrect bus information?",
@@ -202,36 +202,30 @@ export default function FAQ() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+      <section className="relative overflow-hidden bg-red-500">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6 flex flex-col">
-              <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Frequently Asked
-              </span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 flex flex-col">
+              <span className="text-white">Frequently Asked</span>
               <span className="mx-auto"> Questions</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
               Find answers to common questions about{" "}
-              <span className="text-black dark:text-white font-semibold">
-                Bus
-              </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
-                नियोजक
-              </span>
-              . Can't find what you're looking for? Contact our support team!
+              <span className="text-white font-semibold">Bus</span>
+              <span className="text-white font-semibold">नियोजक</span>. Can't
+              find what you're looking for? Contact our support team!
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge className="text-sm bg-blue-500 text-white hover:bg-blue-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-white text-red-500 hover:bg-gray-50 transition-colors px-4 py-2 font-semibold">
                 <HelpCircle className="h-3 w-3 mr-1" />
                 Instant Answers
               </Badge>
-              <Badge className="text-sm bg-green-500 text-white hover:bg-green-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-white text-red-500 hover:bg-gray-50 transition-colors px-4 py-2 font-semibold">
                 <MessageCircle className="h-3 w-3 mr-1" />
                 24/7 Support
               </Badge>
-              <Badge className="text-sm bg-purple-500 text-white hover:bg-purple-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-white text-red-500 hover:bg-gray-50 transition-colors px-4 py-2 font-semibold">
                 <Users className="h-3 w-3 mr-1" />
                 Community Help
               </Badge>
@@ -241,29 +235,29 @@ export default function FAQ() {
       </section>
 
       {/* FAQ Categories */}
-      <section className="py-16 bg-background dark:bg-gray-950">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {faqCategories.map((category, index) => (
               <Card
                 key={category.id}
-                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl hover:scale-[1.02]"
+                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl hover:scale-[1.02]"
               >
                 <CardHeader className="text-center">
-                  <div
-                    className={`bg-gradient-to-br ${category.color} text-white p-4 rounded-xl w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-lg`}
-                  >
+                  <div className="bg-red-500 text-white p-4 rounded-xl w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-lg">
                     <category.icon className="h-8 w-8" />
                   </div>
-                  <CardTitle className="text-lg">{category.title}</CardTitle>
-                  <p className="text-sm text-muted-foreground">
+                  <CardTitle className="text-lg text-gray-900">
+                    {category.title}
+                  </CardTitle>
+                  <p className="text-sm text-gray-600">
                     {category.questions.length} questions answered
                   </p>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <Button
                     variant="outline"
-                    className="w-full hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-300 transition-all duration-200"
+                    className="w-full bg-red-500 text-white hover:bg-red-600 transition-all duration-200"
                     onClick={() => {
                       document
                         .getElementById(`category-${category.id}`)
@@ -288,12 +282,10 @@ export default function FAQ() {
                 className="scroll-mt-24 max-w-4xl mx-auto"
               >
                 <div className="flex items-center justify-center space-x-4 mb-8">
-                  <div
-                    className={`bg-gradient-to-br ${category.color} text-white p-3 rounded-xl shadow-lg`}
-                  >
+                  <div className="bg-red-500 text-white p-3 rounded-xl shadow-lg">
                     <category.icon className="h-6 w-6" />
                   </div>
-                  <h2 className="text-3xl font-bold text-foreground dark:text-white text-center">
+                  <h2 className="text-3xl font-bold text-gray-900 text-center">
                     {category.title}
                   </h2>
                 </div>
@@ -303,15 +295,15 @@ export default function FAQ() {
                     <AccordionItem
                       key={index}
                       value={`${category.id}-${index}`}
-                      className="border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="border-0 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       <AccordionTrigger className="px-6 py-4 hover:no-underline">
-                        <span className="text-left font-semibold text-lg">
+                        <span className="text-left font-semibold text-lg text-gray-900">
                           {faq.question}
                         </span>
                       </AccordionTrigger>
                       <AccordionContent className="px-6 pb-6">
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-gray-700 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -325,7 +317,7 @@ export default function FAQ() {
       </section>
 
       {/* Contact Support Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-16 bg-red-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Still Need Help?
@@ -338,7 +330,7 @@ export default function FAQ() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+              className="bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
               asChild
             >
               <Link to="/contact">
@@ -349,7 +341,7 @@ export default function FAQ() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+              className="bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
               asChild
             >
               <a href="tel:+919876543210">
