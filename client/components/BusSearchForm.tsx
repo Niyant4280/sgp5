@@ -79,7 +79,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       </div>
 
       {/* Main Search Section */}
-      <Card className="border-0 shadow-2xl bg-white dark:bg-gray-900 rounded-3xl overflow-hidden">
+      <Card className="border-0 shadow-2xl bg-white rounded-3xl overflow-hidden">
         <CardContent className="p-0">
           {/* Tab Selection */}
           <div className="bg-red-500 p-6">
