@@ -41,15 +41,15 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
             Search for your next ride by bus number or plan your route with ease. Fast, accurate, and always up-to-date!
           </p>
         </CardHeader>
-        <CardContent className="w-full flex flex-col gap-6">
+        <CardContent className="w-full flex flex-col gap-8">
           <Tabs defaultValue="number" className="w-full">
-            <TabsList className="flex w-full justify-center gap-2 bg-transparent mb-4">
-              <TabsTrigger value="number" className="flex items-center space-x-2 px-4 py-2 rounded-md font-semibold bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-lg hover:scale-[1.05] transition-all duration-200 border-2 border-red-200 hover:border-red-300 data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:border-red-300 data-[state=active]:shadow-lg">
-                <Search className="h-4 w-4" />
+            <TabsList className="flex w-full justify-center gap-4 bg-white/10 backdrop-blur-sm p-2 rounded-2xl mb-8 shadow-lg">
+              <TabsTrigger value="number" className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]">
+                <Search className="h-5 w-5" />
                 <span>By Bus Number</span>
               </TabsTrigger>
-              <TabsTrigger value="route" className="flex items-center space-x-2 px-4 py-2 rounded-md font-semibold bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-lg hover:scale-[1.05] transition-all duration-200 border-2 border-red-200 hover:border-red-300 data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:border-red-300 data-[state=active]:shadow-lg">
-                <MapPin className="h-4 w-4" />
+              <TabsTrigger value="route" className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]">
+                <MapPin className="h-5 w-5" />
                 <span>By Route</span>
               </TabsTrigger>
             </TabsList>
