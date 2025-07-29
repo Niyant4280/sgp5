@@ -107,7 +107,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/30 dark:from-gray-950 dark:via-gray-900 dark:to-red-950/20">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/30">
       <Navigation />
 
       <div className="flex items-center justify-center py-12 px-4">
