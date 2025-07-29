@@ -263,7 +263,7 @@ export default function FAQ() {
                 <CardContent className="pt-0">
                   <Button
                     variant="outline"
-                    className="w-full hover:bg-gradient-to-r hover:from-red-50 hover:to-gray-50 hover:border-red-300 transition-all duration-200"
+                    className="w-full bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 border-white transition-all duration-200"
                     onClick={() => {
                       document
                         .getElementById(`category-${category.id}`)
