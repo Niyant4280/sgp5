@@ -332,17 +332,17 @@ export default function Index() {
               <h3 className="font-semibold mb-4">Features</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/search" className="hover:text-foreground">
+                  <Link to="/search" className="hover:text-foreground transition-colors hover:text-red-600">
                     Bus Search
                   </Link>
                 </li>
                 <li>
-                  <Link to="/routes" className="hover:text-foreground">
+                  <Link to="/routes" className="hover:text-foreground transition-colors hover:text-red-600">
                     Route Planning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/advertise-with-us" className="hover:text-foreground">
+                  <Link to="/advertise-with-us" className="hover:text-foreground transition-colors hover:text-red-600">
                     Advertisement
                   </Link>
                 </li>
@@ -352,12 +352,12 @@ export default function Index() {
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-foreground">
-                    Help Center
-                  </a>
+                  <Link to="/faq" className="hover:text-foreground transition-colors hover:text-red-600">
+                    Help & FAQ
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="hover:text-foreground">
+                  <Link to="/contact" className="hover:text-foreground transition-colors hover:text-red-600">
                     Contact Us
                   </Link>
                 </li>
