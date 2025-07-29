@@ -36,7 +36,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-8 shadow-lg flex flex-col justify-start items-center">
             <Search className="h-16 w-16 mx-auto text-white flex flex-col justify-start items-center" />
           </div>
-          <CardTitle className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-lg">
+          <CardTitle className="text-5xl md:text-6xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg">
             Find Your Bus
           </CardTitle>
           <p className="text-xl md:text-2xl mb-10 text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
