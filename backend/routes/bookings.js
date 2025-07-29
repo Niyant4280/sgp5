@@ -446,7 +446,7 @@ router.put('/:bookingId/checkin', authenticateToken, requireOperator, async (req
 
     res.json({
       message: 'Passenger checked in successfully',
-      checkIn: booking.checkIn
+      checkIn: booking.checkInDetails
     });
 
   } catch (error) {
