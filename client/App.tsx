@@ -37,9 +37,20 @@ const App = () => (
           <Route path="/search" element={<BusSearch />} />
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/login" element={<Login />} />
+
+          {/* User Routes */}
+          <Route path="/dashboard" element={<UserDashboard />} />
+          <Route path="/profile" element={<UserProfile />} />
+          <Route path="/history" element={<TravelHistory />} />
+          <Route path="/settings" element={<UserSettings />} />
+
+          {/* Admin Routes */}
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/users" element={<AdminUsers />} />
+
+          {/* Public Pages */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/advertise-with-us" element={<AdvertiseWithUs />} />
