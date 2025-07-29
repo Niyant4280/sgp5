@@ -391,10 +391,10 @@ export default function Contact() {
       <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Partner with{" "}
-              <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+              <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Reach thousands of daily commuters and grow your business with our
