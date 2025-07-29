@@ -119,12 +119,11 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2 ml-auto">
-            <ThemeToggle />
+          <div className="lg:hidden flex items-center space-x-2 ml-auto">
             <Button
               variant="ghost"
               size="sm"
-              className="text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="text-gray-700 hover:bg-gray-100"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
