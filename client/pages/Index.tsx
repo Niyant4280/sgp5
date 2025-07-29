@@ -208,8 +208,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Bus className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-blue-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Bus className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle>Route Planning</CardTitle>
               </CardHeader>
