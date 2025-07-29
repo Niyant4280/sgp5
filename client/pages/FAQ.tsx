@@ -177,8 +177,9 @@ export default function FAQ() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
-              <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Frequently Asked</span> Questions
+            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6 flex flex-col">
+              <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Frequently Asked</span>
+              <span className="mx-auto"> Questions</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Find answers to common questions about <span className="text-black dark:text-white font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span>. Can't find what you're looking for? Contact our support team!
