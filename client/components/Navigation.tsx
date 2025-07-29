@@ -72,6 +72,17 @@ export default function Navigation() {
             >
               <span>Contact</span>
             </Link>
+            <Link
+              to="/faq"
+              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive("/faq") || isActive("/help")
+                  ? "bg-red-600 dark:bg-red-500 text-white"
+                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+              }`}
+            >
+              <HelpCircle className="h-4 w-4" />
+              <span>Help</span>
+            </Link>
           </div>
 
           {/* Theme Toggle & Auth Buttons */}
