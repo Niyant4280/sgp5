@@ -31,11 +31,11 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
   return (
     <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
-      <Card className="w-full max-w-2xl lg:w-2/3 bg-primary text-white border-2 border-white shadow-lg p-8 flex flex-col items-center text-center rounded-3xl lg:rounded-l-[3rem] lg:rounded-r-3xl dark:bg-primary dark:text-primary-foreground dark:border-red-200">
-        <CardHeader className="mb-2 border-none">
-          <Search className="h-10 w-10 mx-auto mb-4 text-white dark:text-primary-foreground" />
-          <CardTitle className="text-3xl font-bold mb-2 text-white">Find Your Bus</CardTitle>
-          <p className="text-lg mb-6 text-white/90">
+      <Card className="w-full max-w-4xl lg:w-full bg-primary text-white border-2 border-white shadow-lg p-10 flex flex-col items-center text-center rounded-3xl dark:bg-primary dark:text-primary-foreground dark:border-red-200">
+        <CardHeader className="mb-4 border-none">
+          <Search className="h-12 w-12 mx-auto mb-6 text-white dark:text-primary-foreground" />
+          <CardTitle className="text-4xl md:text-5xl font-bold mb-4 text-white">Find Your Bus</CardTitle>
+          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
             Search for your next ride by bus number or plan your route with ease. Fast, accurate, and always up-to-date!
           </p>
         </CardHeader>
@@ -107,23 +107,6 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </Tabs>
         </CardContent>
       </Card>
-      {/* Animated Emoji/Sticker on the right for large screens */}
-      <div className="hidden lg:flex flex-col items-center justify-center w-1/3">
-        <div className="flex flex-col items-center justify-center w-full">
-          <svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-4">
-            <rect x="10" y="60" width="140" height="20" rx="8" fill="#e5e7eb"/>
-            <rect x="30" y="30" width="30" height="30" rx="6" fill="#fca5a5"/>
-            <rect x="60" y="20" width="40" height="40" rx="8" fill="#f87171"/>
-            <rect x="100" y="40" width="25" height="25" rx="5" fill="#fca5a5"/>
-            <rect x="50" y="70" width="60" height="18" rx="6" fill="#ef4444"/>
-            <rect x="60" y="75" width="15" height="8" rx="2" fill="#fff"/>
-            <rect x="85" y="75" width="15" height="8" rx="2" fill="#fff"/>
-            <circle cx="60" cy="88" r="5" fill="#222" stroke="#fff" strokeWidth="2"/>
-            <circle cx="100" cy="88" r="5" fill="#222" stroke="#fff" strokeWidth="2"/>
-          </svg>
-          <span className="text-lg font-semibold text-red-600 dark:text-white text-center">Travel smart, travel together.</span>
-        </div>
-      </div>
     </div>
   );
 }
