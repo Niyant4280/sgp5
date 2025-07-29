@@ -60,14 +60,14 @@ export default function RoutesPage() {
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="bg-white/90 dark:bg-background rounded-2xl shadow-lg p-6 flex flex-col items-center w-full max-w-xs">
+            <div className="bg-white/90  rounded-2xl shadow-lg p-6 flex flex-col items-center w-full max-w-xs">
               <Search className="h-6 w-6 text-primary mb-2" />
               <input
                 type="text"
                 placeholder="Search routes..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-md border border-primary/30 px-4 py-2 text-sm text-primary focus:outline-none focus:ring-2 focus:ring-primary/40 bg-white dark:bg-background"
+                className="w-full rounded-md border border-primary/30 px-4 py-2 text-sm text-primary focus:outline-none focus:ring-2 focus:ring-primary/40 bg-white "
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function RoutesPage() {
             <AccordionItem
               key={route.id}
               value={route.id}
-              className="rounded-2xl border-2 border-primary/10 bg-white/90 dark:bg-background shadow hover:shadow-2xl transition-shadow"
+              className="rounded-2xl border-2 border-primary/10 bg-white/90  shadow hover:shadow-2xl transition-shadow"
             >
               <AccordionTrigger className="px-6 py-4 flex flex-col items-start gap-1">
                 <span className="flex items-center gap-2 text-primary text-lg font-semibold">
