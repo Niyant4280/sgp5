@@ -252,37 +252,37 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       </Card>
 
       {/* Features */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <div className="text-center p-4">
-          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Clock className="h-6 w-6 text-red-600 dark:text-red-400" />
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8">
+        <div className="text-center p-3 sm:p-4">
+          <div className="bg-red-100 rounded-full p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 mx-auto mb-2 sm:mb-3">
+            <Clock className="h-6 w-6 text-red-600" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+          <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">
             Real-time Updates
           </h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-xs sm:text-sm text-gray-600">
             Live bus locations and arrival times
           </p>
         </div>
-        <div className="text-center p-4">
-          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <MapPin className="h-6 w-6 text-black dark:text-gray-400" />
+        <div className="text-center p-3 sm:p-4">
+          <div className="bg-red-100 rounded-full p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 mx-auto mb-2 sm:mb-3">
+            <MapPin className="h-6 w-6 text-black" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+          <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">
             Smart Routing
           </h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-xs sm:text-sm text-gray-600">
             Best routes with transfer options
           </p>
         </div>
-        <div className="text-center p-4">
-          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Zap className="h-6 w-6 text-red-600 dark:text-red-400" />
+        <div className="text-center p-3 sm:p-4">
+          <div className="bg-red-100 rounded-full p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 mx-auto mb-2 sm:mb-3">
+            <Zap className="h-6 w-6 text-red-600" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+          <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">
             Instant Results
           </h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-xs sm:text-sm text-gray-600">
             Fast search with accurate data
           </p>
         </div>
