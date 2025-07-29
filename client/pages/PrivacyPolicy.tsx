@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Your privacy is important to us. Learn how <span className="text-black  font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> collects, uses, and protects your information.
+            Your privacy is important to us. Learn how <span className="text-black  font-semibold">Bus</span><span className="text-red-600  font-semibold">नियोजक</span> collects, uses, and protects your information.
           </p>
           <p className="text-sm text-muted-foreground mt-4">
             Last updated: January 15, 2025
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
                   <h4 className="font-semibold mb-3 text-primary">Technical Safeguards</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• End-to-end encryption for sensitive data</li>
-                    <li>• Secure HTTPS connections</li>
+                    <li>��� Secure HTTPS connections</li>
                     <li>• Regular security audits and updates</li>
                     <li>• Access controls and authentication</li>
                   </ul>
