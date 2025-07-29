@@ -198,7 +198,7 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white ">
       <Navigation />
 
       {/* Hero Section */}
