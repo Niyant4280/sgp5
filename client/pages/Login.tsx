@@ -116,7 +116,7 @@ export default function Login() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
               Welcome to <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">निय��जक</span>
+              <span className="text-red-600 dark:text-red-400">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Join thousands of commuters who trust us for their daily travel needs
@@ -320,7 +320,7 @@ export default function Login() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="register-password" className="text-foreground dark:text-white">Password</Label>
+                    <Label htmlFor="register-password" className="text-foreground">Password</Label>
                     <div className="relative">
                       <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
