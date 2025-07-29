@@ -72,7 +72,7 @@ export default function Index() {
               Welcome to <span className="text-black">Bus</span>
               <span className="text-red-600">नियोजक</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Plan your journey, discover the best routes, and experience
               seamless bus travel—all in one place.
             </p>
