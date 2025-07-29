@@ -219,8 +219,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 </form>
 
                 {/* Quick Route Suggestions */}
-                <div className="mt-8">
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                <div className="mt-6 sm:mt-8">
+                  <p className="text-sm text-gray-500 mb-3">
                     Popular routes:
                   </p>
                   <div className="space-y-2">
@@ -231,16 +231,16 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                     ].map((route, index) => (
                       <div
                         key={index}
-                        className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                        className="flex items-center justify-between p-2 sm:p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors"
                         onClick={() => {
                           setFromStop(route.from);
                           setToStop(route.to);
                         }}
                       >
-                        <span className="text-sm font-medium">
+                        <span className="text-xs sm:text-sm font-medium">
                           {route.from} → {route.to}
                         </span>
-                        <ArrowRight className="h-4 w-4 text-gray-400" />
+                        <ArrowRight className="h-3 sm:h-4 w-3 sm:w-4 text-gray-400" />
                       </div>
                     ))}
                   </div>
