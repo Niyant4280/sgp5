@@ -50,7 +50,7 @@ export default function Index() {
           },
           {
             number: "205",
-            route: "Mall �� Airport",
+            route: "Mall → Airport",
             nextDeparture: "12 mins",
             frequency: "Every 25 mins",
           },
@@ -123,7 +123,7 @@ export default function Index() {
                           Active
                         </Badge>
                       </div>
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <p className="text-sm text-muted-foreground">
                             Next Departure
