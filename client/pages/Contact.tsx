@@ -131,7 +131,7 @@ export default function Contact() {
       {/* Contact Info Cards */}
       <section className="py-12 bg-background dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {contactInfo.map((info, index) => (
               <Card key={index} className="text-center border-0 shadow-lg bg-white/90 dark:bg-gray-900/80 transition-shadow hover:shadow-2xl rounded-2xl">
                 <CardContent className="pt-10 pb-8">
