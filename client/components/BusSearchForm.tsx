@@ -50,11 +50,11 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           <div className="bg-red-500 p-3 rounded-2xl shadow-lg">
             <Search className="h-8 w-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Find Your Bus
           </h2>
         </div>
-        <p className="text-lg text-white/90 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto px-4">
           Search by bus number or plan your route between stops. Get real-time
           updates and never miss your ride.
         </p>
