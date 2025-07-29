@@ -74,7 +74,7 @@ export default function Contact() {
       title: "Office Hours",
       value: "Mon-Fri 9AM-6PM",
       description: "Business hours",
-      color: "text-blue-600 dark:text-blue-400",
+      color: "text-blue-600",
     },
   ];
 
