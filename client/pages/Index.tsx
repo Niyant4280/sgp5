@@ -193,8 +193,8 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <MapPin className="h-8 w-8 text-red-600 dark:text-red-400" />
+                <div className="bg-red-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <MapPin className="h-8 w-8 text-red-600" />
                 </div>
                 <CardTitle>Real-time Tracking</CardTitle>
               </CardHeader>
