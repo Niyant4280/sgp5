@@ -3,7 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Search, MapPin, ArrowRight, Clock, Zap, Navigation as NavigationIcon } from "lucide-react";
+import {
+  Search,
+  MapPin,
+  ArrowRight,
+  Clock,
+  Zap,
+  Navigation as NavigationIcon,
+} from "lucide-react";
 
 interface BusSearchFormProps {
   onSearch: (type: "number" | "route", data: any) => void;
@@ -48,18 +55,26 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </h2>
         </div>
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Search by bus number or plan your route between stops. Get real-time updates and never miss your ride.
+          Search by bus number or plan your route between stops. Get real-time
+          updates and never miss your ride.
         </p>
       </div>
 
       {/* Quick Actions */}
       <div className="grid grid-cols-3 gap-4 mb-8">
         {quickActions.map((action, index) => (
-          <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
+          <Card
+            key={index}
+            className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700"
+          >
             <CardContent className="p-4 text-center">
               <action.icon className="h-6 w-6 mx-auto mb-2 text-blue-600 dark:text-blue-400" />
-              <div className="text-sm font-semibold text-gray-900 dark:text-white">{action.label}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">{action.desc}</div>
+              <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                {action.label}
+              </div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">
+                {action.desc}
+              </div>
             </CardContent>
           </Card>
         ))}
@@ -105,10 +120,11 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                     Search by Bus Number
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Enter the bus number to get live tracking and route information
+                    Enter the bus number to get live tracking and route
+                    information
                   </p>
                 </div>
-                
+
                 <form onSubmit={handleBusNumberSearch} className="space-y-6">
                   <div className="relative">
                     <Input
@@ -120,7 +136,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                     />
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   </div>
-                  
+
                   <Button
                     type="submit"
                     disabled={!busNumber.trim()}
@@ -133,18 +149,22 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
                 {/* Popular Buses */}
                 <div className="mt-8">
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Popular buses:</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    Popular buses:
+                  </p>
                   <div className="flex flex-wrap gap-2">
-                    {["101", "205", "AC-42", "DLB-104", "Red Line"].map((bus) => (
-                      <Badge
-                        key={bus}
-                        variant="outline"
-                        className="cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
-                        onClick={() => setBusNumber(bus)}
-                      >
-                        {bus}
-                      </Badge>
-                    ))}
+                    {["101", "205", "AC-42", "DLB-104", "Red Line"].map(
+                      (bus) => (
+                        <Badge
+                          key={bus}
+                          variant="outline"
+                          className="cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+                          onClick={() => setBusNumber(bus)}
+                        >
+                          {bus}
+                        </Badge>
+                      ),
+                    )}
                   </div>
                 </div>
               </div>
@@ -202,12 +222,14 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
                 {/* Quick Route Suggestions */}
                 <div className="mt-8">
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Popular routes:</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    Popular routes:
+                  </p>
                   <div className="space-y-2">
                     {[
                       { from: "Central Station", to: "Airport" },
                       { from: "City Mall", to: "University" },
-                      { from: "Tech Park", to: "Metro Station" }
+                      { from: "Tech Park", to: "Metro Station" },
                     ].map((route, index) => (
                       <div
                         key={index}
@@ -217,7 +239,9 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                           setToStop(route.to);
                         }}
                       >
-                        <span className="text-sm font-medium">{route.from} → {route.to}</span>
+                        <span className="text-sm font-medium">
+                          {route.from} → {route.to}
+                        </span>
                         <ArrowRight className="h-4 w-4 text-gray-400" />
                       </div>
                     ))}
@@ -235,22 +259,34 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
             <Clock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Real-time Updates</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">Live bus locations and arrival times</p>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+            Real-time Updates
+          </h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Live bus locations and arrival times
+          </p>
         </div>
         <div className="text-center p-4">
           <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
             <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Smart Routing</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">Best routes with transfer options</p>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+            Smart Routing
+          </h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Best routes with transfer options
+          </p>
         </div>
         <div className="text-center p-4">
           <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
             <Zap className="h-6 w-6 text-purple-600 dark:text-purple-400" />
           </div>
-          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Instant Results</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">Fast search with accurate data</p>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+            Instant Results
+          </h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Fast search with accurate data
+          </p>
         </div>
       </div>
     </div>

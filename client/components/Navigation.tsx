@@ -39,7 +39,9 @@ export default function Navigation() {
               </div>
               <span className="text-xl font-bold">
                 <span className="text-black dark:text-gray-100">Bus</span>
-                <span className="text-[rgba(220,38,38,1)] dark:text-red-400">नियोजक</span>
+                <span className="text-[rgba(220,38,38,1)] dark:text-red-400">
+                  नियोजक
+                </span>
               </span>
             </Link>
           </div>

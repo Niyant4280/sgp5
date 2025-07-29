@@ -293,8 +293,8 @@ export default function Index() {
           <p className="text-xl mb-8 text-primary-foreground/90">
             Join thousands of users already using&nbsp;
             <span className="font-bold text-white">Bus</span>
-            <span className="font-bold text-white">नियोजक</span> for their
-            daily transportation needs.
+            <span className="font-bold text-white">नियोजक</span> for their daily
+            transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -305,7 +305,9 @@ export default function Index() {
             >
               <Link to="/search">
                 <Search className="h-5 w-5 mr-2" />
-                <span className="text-[rgba(220,38,38,1)]">Start Searching</span>
+                <span className="text-[rgba(220,38,38,1)]">
+                  Start Searching
+                </span>
               </Link>
             </Button>
           </div>
