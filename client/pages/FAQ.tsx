@@ -31,7 +31,7 @@ export default function FAQ() {
       id: "general",
       title: "General Information",
       icon: HelpCircle,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-red-500 to-black",
       questions: [
         {
           question: "What is Busनियोजक?",
