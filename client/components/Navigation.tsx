@@ -137,7 +137,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-border bg-white dark:bg-gray-950">
+          <div className="lg:hidden border-t border-border bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 to="/search"
