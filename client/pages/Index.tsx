@@ -323,7 +323,7 @@ export default function Index() {
                 </div>
                 <span className="text-xl font-bold text-foreground">
                   <span className="text-black dark:text-white">Bus</span>
-                  <span className="text-primary">नियोजक</span>
+                  <span className="text-[rgba(220,38,38,1)]">नियोजक</span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-4">
