@@ -133,7 +133,7 @@ export default function PrivacyPolicy() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="bg-green-50  p-4 rounded-lg border border-green-200 dark:border-green-800">
+              <div className="bg-green-50  p-4 rounded-lg border border-green-200 ">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
                   <div>
