@@ -126,7 +126,7 @@ export default function AdvertiseWithUs() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-red-600 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Advertise with <span className="text-white">Bus</span>
@@ -171,7 +171,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Ad Formats Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
@@ -219,7 +219,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
@@ -282,7 +282,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Requirements Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
@@ -380,7 +380,7 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Campaign?
