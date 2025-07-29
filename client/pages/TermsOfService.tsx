@@ -36,11 +36,11 @@ export default function TermsOfService() {
           <div className="bg-gradient-to-br from-green-600 to-blue-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
             <FileText className="h-10 w-10" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground  mb-4">
             Terms of Service
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Please read these terms carefully before using <span className="text-black dark:text-white font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> services.
+            Please read these terms carefully before using <span className="text-black  font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> services.
           </p>
           <p className="text-sm text-muted-foreground mt-4">
             Last updated: January 15, 2025
