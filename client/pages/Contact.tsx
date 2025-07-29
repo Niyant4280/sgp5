@@ -97,7 +97,7 @@ export default function Contact() {
       icon: MessageCircle,
       title: "General Inquiries",
       description: "General questions, feedback, and suggestions",
-      email: "hello@busन���योजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-green-500 to-emerald-500",
     },
     {
