@@ -50,7 +50,7 @@ export default function Index() {
           },
           {
             number: "205",
-            route: "Mall → Airport",
+            route: "Mall �� Airport",
             nextDeparture: "12 mins",
             frequency: "Every 25 mins",
           },
@@ -99,7 +99,7 @@ export default function Index() {
 
           {/* Search Results */}
           {searchResults && (
-            <div className="mb-16">
+            <div className="mb-8 sm:mb-12 lg:mb-16 px-4">
               <Card className="max-w-2xl mx-auto">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
