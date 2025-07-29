@@ -157,7 +157,7 @@ export default function Login() {
             )}
 
             <Tabs defaultValue="login" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 bg-red-100 dark:bg-red-950/30 p-1 rounded-2xl border border-red-200 dark:border-red-800">
+              <TabsList className="grid w-full grid-cols-2 bg-red-100 p-1 rounded-2xl border border-red-200">
                 <TabsTrigger
                   value="login"
                   className="rounded-xl data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-sm hover:bg-red-50 dark:hover:bg-red-900/20 transition-all"
