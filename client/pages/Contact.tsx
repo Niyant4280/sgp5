@@ -97,7 +97,7 @@ export default function Contact() {
       icon: MessageCircle,
       title: "General Inquiries",
       description: "General questions, feedback, and suggestions",
-      email: "hello@busनियो���क.com",
+      email: "hello@busनियोजक.com",
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -119,7 +119,7 @@ export default function Contact() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
-              Get in <span className="text-primary wavy-underline">Touch</span>
+              Get in <span className="text-primary">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Have questions about <span className="text-black dark:text-white font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span>? Need support? Want to partner with us? We're here to help and excited to connect with you!
