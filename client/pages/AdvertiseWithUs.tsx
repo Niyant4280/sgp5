@@ -252,7 +252,7 @@ export default function AdvertiseWithUs() {
                 key={plan.id}
                 className={`relative shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ${
                   plan.popular
-                    ? "border-2 border-blue-500 scale-105 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20"
+                    ? "border-2 border-blue-500 scale-105 bg-gradient-to-br from-white to-blue-50"
                     : "border-0 bg-white"
                 }`}
               >
