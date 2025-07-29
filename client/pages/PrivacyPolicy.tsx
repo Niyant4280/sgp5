@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
                   <div>
                     <h4 className="font-semibold mb-2 text-primary">Preference Cookies</h4>
                     <p className="text-sm text-muted-foreground">
-                      Remember your settings like language and theme preferences.
+                      Remember your settings like language and other preferences.
                     </p>
                   </div>
                 </div>
