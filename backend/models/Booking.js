@@ -217,7 +217,7 @@ const bookingSchema = new mongoose.Schema({
       default: false
     }
   },
-  checkIn: {
+  checkInDetails: {
     isCheckedIn: {
       type: Boolean,
       default: false
