@@ -376,7 +376,7 @@ export default function Login() {
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground">
                 By continuing, you agree to our{" "}
-                <Link to="/terms" className="text-red-600 dark:text-red-400 hover:underline">
+                <Link to="/terms" className="text-red-600 hover:underline">
                   Terms of Service
                 </Link>{" "}
                 and{" "}
