@@ -61,7 +61,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
         {quickActions.map((action, index) => (
           <Card
             key={index}
