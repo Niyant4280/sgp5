@@ -82,8 +82,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       <Card className="border-0 shadow-2xl bg-white rounded-3xl overflow-hidden">
         <CardContent className="p-0">
           {/* Tab Selection */}
-          <div className="bg-red-500 p-6">
-            <div className="flex gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-2">
+          <div className="bg-red-500 p-4 sm:p-6">
+            <div className="flex gap-1 sm:gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-1 sm:p-2">
               <button
                 onClick={() => setActiveTab("number")}
                 className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
