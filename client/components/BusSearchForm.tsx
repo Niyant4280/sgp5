@@ -43,7 +43,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto bg-red-500 rounded-3xl p-8">
       {/* Header Section */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-3 mb-4">
