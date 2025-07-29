@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Menu, X, Bus, Search, MapPin, User, Settings } from "lucide-react";
+import { Menu, X, Bus, Search, MapPin, User, Settings, HelpCircle } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navigation() {
