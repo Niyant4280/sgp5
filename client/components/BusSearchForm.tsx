@@ -72,9 +72,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
               <div className="text-sm font-semibold text-white">
                 {action.label}
               </div>
-              <div className="text-xs text-white/80">
-                {action.desc}
-              </div>
+              <div className="text-xs text-white/80">{action.desc}</div>
             </CardContent>
           </Card>
         ))}
