@@ -110,7 +110,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </div>
 
           {/* Search Content */}
-          <div className="p-8">
+          <div className="p-4 sm:p-6 lg:p-8">
             {activeTab === "number" ? (
               <div className="space-y-6">
                 <div className="text-center mb-6">
