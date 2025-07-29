@@ -252,7 +252,7 @@ export default function BusSearch() {
                       <Bus className="h-4 w-4 text-blue-600 " />
                     </div>
                     <div>
-                      <h4 className="text-sm font-medium text-blue-900 dark:text-blue-100 mb-1">
+                      <h4 className="text-sm font-medium text-blue-900  mb-1">
                         How Bus Search Works
                       </h4>
                       <ul className="text-xs text-blue-700 dark:text-blue-300 space-y-1">
