@@ -158,7 +158,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                         <Badge
                           key={bus}
                           variant="outline"
-                          className="cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+                          className="cursor-pointer hover:bg-red-50 dark:hover:bg-gray-700 transition-colors"
                           onClick={() => setBusNumber(bus)}
                         >
                           {bus}
