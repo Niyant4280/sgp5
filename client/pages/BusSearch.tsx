@@ -234,7 +234,7 @@ export default function BusSearch() {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
+                  <Button type="submit" className="w-full bg-[rgba(220,38,38,1)] hover:bg-[rgba(220,38,38,0.9)]">
                     <Bus className="h-4 w-4 mr-2" />
                     Find This Bus
                   </Button>
