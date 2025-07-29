@@ -65,7 +65,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
         {quickActions.map((action, index) => (
           <Card
             key={index}
-            className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-gradient-to-br from-red-100 to-red-50 dark:from-gray-800 dark:to-gray-700"
+            className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/20 backdrop-blur-sm"
           >
             <CardContent className="p-4 text-center">
               <action.icon className="h-6 w-6 mx-auto mb-2 text-red-700 dark:text-red-300" />
