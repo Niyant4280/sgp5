@@ -132,7 +132,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                       onChange={(e) => setBusNumber(e.target.value)}
                       className="h-12 sm:h-14 text-base sm:text-lg pl-10 sm:pl-12 pr-4 rounded-2xl border-2 border-gray-200 focus:border-red-500 transition-colors bg-gray-50"
                     />
-                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    <Search className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 h-4 sm:h-5 w-4 sm:w-5 text-gray-400" />
                   </div>
 
                   <Button
