@@ -90,7 +90,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 onClick={() => setActiveTab("number")}
                 className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
                   activeTab === "number"
-                    ? "bg-white text-blue-600 shadow-lg font-semibold"
+                    ? "bg-white text-red-600 shadow-lg font-semibold"
                     : "text-white hover:bg-white/10"
                 }`}
               >
