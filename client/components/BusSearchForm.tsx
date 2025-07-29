@@ -73,19 +73,19 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 </Button>
               </form>
             </TabsContent>
-            <TabsContent value="route" className="mt-2">
-              <form onSubmit={handleRouteSearch} className="flex flex-col gap-4 items-center">
+            <TabsContent value="route" className="mt-4">
+              <form onSubmit={handleRouteSearch} className="flex flex-col gap-6 items-center">
                 <Input
                   id="from-stop"
                   type="text"
                   placeholder="From Stop"
                   value={fromStop}
                   onChange={(e) => setFromStop(e.target.value)}
-                  className="max-w-xs text-center bg-white text-red-600 placeholder:text-red-300 border-2 border-red-200 focus:border-red-400 hover:border-red-300 transition-colors"
+                  className="text-xl h-16 max-w-md w-full text-center bg-white text-red-600 placeholder:text-red-300 border-0 focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
                 />
                 <div className="flex justify-center">
-                  <div className="bg-muted rounded-full p-2">
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 shadow-lg">
+                    <ArrowRight className="h-6 w-6 text-white" />
                   </div>
                 </div>
                 <Input
@@ -94,14 +94,14 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   placeholder="To Stop"
                   value={toStop}
                   onChange={(e) => setToStop(e.target.value)}
-                  className="max-w-xs text-center bg-white text-red-600 placeholder:text-red-300 border-2 border-red-200 focus:border-red-400 hover:border-red-300 transition-colors"
+                  className="text-xl h-16 max-w-md w-full text-center bg-white text-red-600 placeholder:text-red-300 border-0 focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
                 />
                 <Button
                   type="submit"
-                  className="w-full max-w-xs bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-lg hover:scale-[1.05] transition-all duration-200 font-semibold border-2 border-white hover:border-red-300 disabled:opacity-70 disabled:grayscale-0 dark:bg-white dark:text-red-600 dark:hover:bg-red-50 dark:hover:text-red-700 dark:border-red-200 dark:hover:border-red-300"
+                  className="w-full max-w-md h-16 text-xl bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 font-bold border-0 rounded-2xl shadow-lg disabled:opacity-70"
                   disabled={!fromStop.trim() || !toStop.trim()}
                 >
-                  <MapPin className="h-4 w-4 mr-2" />
+                  <MapPin className="h-6 w-6 mr-3" />
                   Find Buses
                 </Button>
               </form>
