@@ -271,7 +271,7 @@ export default function Login() {
               <TabsContent value="register">
                 <form onSubmit={handleRegister} className="space-y-6 mt-6">
                   <div className="space-y-2">
-                    <Label htmlFor="register-name" className="text-foreground dark:text-white">Full Name</Label>
+                    <Label htmlFor="register-name" className="text-foreground">Full Name</Label>
                     <div className="relative">
                       <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
