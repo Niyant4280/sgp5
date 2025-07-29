@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      value: "contact@busनियोजक.com",
+      value: "contact@bus���ियोजक.com",
       description: "Get in touch via email",
       color: "text-primary",
     },
@@ -151,7 +151,7 @@ export default function Contact() {
                   >
                     <info.icon className={`h-9 w-9 ${info.color}`} />
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                  <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                     {info.title}
                   </h3>
                   <p className="text-foreground font-medium mb-1 dark:text-gray-200">
