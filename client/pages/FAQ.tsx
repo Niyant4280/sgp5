@@ -87,7 +87,7 @@ export default function FAQ() {
       id: "tracking",
       title: "Live Tracking",
       icon: MapPin,
-      color: "from-red-500 to-orange-500",
+      color: "from-red-600 to-black",
       questions: [
         {
           question: "How does live bus tracking work?",
