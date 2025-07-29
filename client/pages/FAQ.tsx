@@ -143,7 +143,7 @@ export default function FAQ() {
       id: "account",
       title: "Account & Privacy",
       icon: Shield,
-      color: "from-yellow-500 to-amber-500",
+      color: "from-red-500 to-gray-600",
       questions: [
         {
           question: "Do I need to create an account?",
