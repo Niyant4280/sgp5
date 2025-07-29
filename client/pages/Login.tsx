@@ -287,7 +287,7 @@ export default function Login() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="register-email" className="text-foreground dark:text-white">Email Address</Label>
+                    <Label htmlFor="register-email" className="text-foreground">Email Address</Label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
