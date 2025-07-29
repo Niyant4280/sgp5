@@ -138,9 +138,9 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   <Button
                     type="submit"
                     disabled={!busNumber.trim()}
-                    className="w-full h-14 text-lg font-semibold bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-12 sm:h-14 text-base sm:text-lg font-semibold bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <Zap className="h-5 w-5 mr-2" />
+                    <Zap className="h-4 sm:h-5 w-4 sm:w-5 mr-2" />
                     Track This Bus
                   </Button>
                 </form>
