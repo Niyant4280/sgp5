@@ -114,10 +114,10 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
             {activeTab === "number" ? (
               <div className="space-y-6">
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
                     Search by Bus Number
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-sm sm:text-base text-gray-600">
                     Enter the bus number to get live tracking and route
                     information
                   </p>
