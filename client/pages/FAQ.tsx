@@ -31,7 +31,7 @@ export default function FAQ() {
       id: "general",
       title: "General Information",
       icon: HelpCircle,
-      color: "from-red-500 to-black",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "What is Busनियोजक?",
@@ -59,7 +59,7 @@ export default function FAQ() {
       id: "search",
       title: "Bus Search & Routes",
       icon: Search,
-      color: "from-black to-red-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How do I search for a specific bus?",
@@ -87,7 +87,7 @@ export default function FAQ() {
       id: "tracking",
       title: "Live Tracking",
       icon: MapPin,
-      color: "from-red-600 to-black",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How does live bus tracking work?",
@@ -115,7 +115,7 @@ export default function FAQ() {
       id: "mobile",
       title: "Mobile App & Website",
       icon: Smartphone,
-      color: "from-black to-red-600",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "Is there a mobile app available?",
@@ -143,7 +143,7 @@ export default function FAQ() {
       id: "account",
       title: "Account & Privacy",
       icon: Shield,
-      color: "from-red-500 to-gray-600",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "Do I need to create an account?",
@@ -171,7 +171,7 @@ export default function FAQ() {
       id: "support",
       title: "Support & Feedback",
       icon: Users,
-      color: "from-gray-800 to-red-500",
+      color: "from-red-700 to-black",
       questions: [
         {
           question: "How can I report incorrect bus information?",
@@ -207,7 +207,7 @@ export default function FAQ() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6 flex flex-col">
-              <span className="text-gradient bg-gradient-to-r from-red-600 to-black bg-clip-text text-transparent">
+              <span className="text-gradient bg-gradient-to-r from-red-700 to-black bg-clip-text text-transparent">
                 Frequently Asked
               </span>
               <span className="mx-auto"> Questions</span>
@@ -223,7 +223,7 @@ export default function FAQ() {
               . Can't find what you're looking for? Contact our support team!
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge className="text-sm bg-red-500 text-white hover:bg-red-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-red-700 text-white hover:bg-red-800 transition-colors px-4 py-2 font-semibold">
                 <HelpCircle className="h-3 w-3 mr-1" />
                 Instant Answers
               </Badge>
@@ -231,7 +231,7 @@ export default function FAQ() {
                 <MessageCircle className="h-3 w-3 mr-1" />
                 24/7 Support
               </Badge>
-              <Badge className="text-sm bg-red-600 text-white hover:bg-red-700 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-red-700 text-white hover:bg-red-800 transition-colors px-4 py-2 font-semibold">
                 <Users className="h-3 w-3 mr-1" />
                 Community Help
               </Badge>
@@ -325,7 +325,7 @@ export default function FAQ() {
       </section>
 
       {/* Contact Support Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-black text-white">
+      <section className="py-16 bg-gradient-to-r from-red-700 to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Still Need Help?
@@ -338,7 +338,7 @@ export default function FAQ() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-red-600 hover:bg-red-50 hover:text-red-700 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+              className="bg-white text-red-700 hover:bg-red-50 hover:text-red-800 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
               asChild
             >
               <Link to="/contact">
