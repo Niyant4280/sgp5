@@ -124,7 +124,7 @@ export default function Contact() {
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Have questions about{" "}
               <span className="text-black font-semibold">
-                Bus
+                &nbsp;Bus
               </span>
               <span className="text-red-600 font-semibold">
                 नियोजक
