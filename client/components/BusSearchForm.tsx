@@ -69,10 +69,10 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           >
             <CardContent className="p-4 text-center">
               <action.icon className="h-6 w-6 mx-auto mb-2 text-white" />
-              <div className="text-sm font-semibold text-gray-900 dark:text-white">
+              <div className="text-sm font-semibold text-white">
                 {action.label}
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">
+              <div className="text-xs text-white/80">
                 {action.desc}
               </div>
             </CardContent>
