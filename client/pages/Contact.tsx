@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      value: "contact@busनियोजक.com",
+      value: "contact@busनि��ोजक.com",
       description: "Get in touch via email",
       color: "text-primary",
     },
@@ -97,7 +97,7 @@ export default function Contact() {
       icon: MessageCircle,
       title: "General Inquiries",
       description: "General questions, feedback, and suggestions",
-      email: "hello@busनियोजक.com",
+      email: "hello@busन���योजक.com",
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -407,8 +407,8 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 flex-shrink-0">
-                    <Users className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  <div className="bg-blue-100 rounded-full p-3 flex-shrink-0">
+                    <Users className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -421,8 +421,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -435,8 +435,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 flex-shrink-0">
-                    <TrendingUp className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                  <div className="bg-purple-100 rounded-full p-3 flex-shrink-0">
+                    <TrendingUp className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -453,7 +453,7 @@ export default function Contact() {
 
             {/* Right side - CTA Card */}
             <div>
-              <Card className="shadow-2xl border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/20 rounded-3xl overflow-hidden">
+              <Card className="shadow-2xl border-0 bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
