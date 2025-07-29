@@ -27,27 +27,27 @@ import {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white">
       <Navigation />
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white dark:from-gray-950 dark:via-red-950/10 dark:to-gray-950">
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              About <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+              About <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
-            <span className="inline-block text-lg text-gray-700 dark:text-gray-300 font-medium mb-2">
+            <span className="inline-block text-lg text-gray-700 font-medium mb-2">
               Empowering DTC with Smart Transit Solutions
             </span>
           </div>
 
           <div className="space-y-8">
-            <Card className="border-l-4 border-blue-500 bg-blue-50/40 dark:bg-blue-900/10">
+            <Card className="border-l-4 border-blue-500 bg-blue-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Globe className="h-7 w-7 text-blue-600" />
-                  <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-300">
+                  <h2 className="text-2xl font-semibold text-blue-700">
                     Our Mission
                   </h2>
                 </div>
