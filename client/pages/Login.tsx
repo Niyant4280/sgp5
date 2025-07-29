@@ -131,9 +131,9 @@ export default function Login() {
             <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-2xl">
               <Bus className="h-10 w-10" />
             </div>
-            <CardTitle className="text-2xl font-bold text-foreground dark:text-white">
+            <CardTitle className="text-2xl font-bold text-foreground">
               Welcome to <span className="text-black">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+              <span className="text-red-600">नियोजक</span>
             </CardTitle>
             <p className="text-muted-foreground mt-2">
               Join thousands of happy commuters!
