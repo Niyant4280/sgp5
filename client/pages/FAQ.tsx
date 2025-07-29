@@ -338,7 +338,7 @@ export default function FAQ() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-red-700 hover:bg-red-50 hover:text-red-800 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+              className="bg-white text-red-500 hover:bg-gray-50 hover:text-red-600 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
               asChild
             >
               <Link to="/contact">
