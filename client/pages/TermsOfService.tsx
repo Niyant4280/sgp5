@@ -133,7 +133,7 @@ export default function TermsOfService() {
                 <div className="flex items-start space-x-3">
                   <AlertTriangle className="h-5 w-5 text-yellow-600 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">
+                    <h4 className="font-semibold text-yellow-800  mb-1">
                       Service Disclaimer
                     </h4>
                     <p className="text-sm text-yellow-700 dark:text-yellow-300">
