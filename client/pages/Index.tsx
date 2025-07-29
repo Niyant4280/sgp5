@@ -66,7 +66,7 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white dark:bg-gray-950">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pb-7">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
               Welcome to <span className="text-black dark:text-white">Bus</span>
