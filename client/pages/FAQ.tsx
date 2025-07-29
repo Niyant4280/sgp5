@@ -251,7 +251,7 @@ export default function FAQ() {
               >
                 <CardHeader className="text-center">
                   <div
-                    className={`bg-gradient-to-br ${category.color} text-white p-4 rounded-xl w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-lg`}
+                    className="bg-red-500 text-white p-4 rounded-xl w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-lg"
                   >
                     <category.icon className="h-8 w-8" />
                   </div>
