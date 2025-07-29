@@ -153,7 +153,7 @@ export default function Contact() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -285,7 +285,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-background dark:bg-gray-950">
+      <section className="py-16 bg-background dark:bg-gray-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
@@ -333,7 +333,7 @@ export default function Contact() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-red-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-red-600 to-red-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Need Immediate Help?
@@ -358,7 +358,7 @@ export default function Contact() {
       </section>
 
       {/* Advertisement Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
