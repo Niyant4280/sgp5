@@ -380,7 +380,7 @@ export default function Login() {
                   Terms of Service
                 </Link>{" "}
                 and{" "}
-                <Link to="/privacy" className="text-red-600 dark:text-red-400 hover:underline">
+                <Link to="/privacy" className="text-red-600 hover:underline">
                   Privacy Policy
                 </Link>
               </p>
