@@ -238,8 +238,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <TrendingUp className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                <div className="bg-purple-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <TrendingUp className="h-8 w-8 text-purple-600" />
                 </div>
                 <CardTitle>Smart Insights</CardTitle>
               </CardHeader>
@@ -253,8 +253,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-orange-100 dark:bg-orange-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-orange-600 dark:text-orange-400" />
+                <div className="bg-orange-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="h-8 w-8 text-orange-600" />
                 </div>
                 <CardTitle>Safe & Secure</CardTitle>
               </CardHeader>
@@ -268,8 +268,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-yellow-100 dark:bg-yellow-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Zap className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                <div className="bg-yellow-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Zap className="h-8 w-8 text-yellow-600" />
                 </div>
                 <CardTitle>Instant Updates</CardTitle>
               </CardHeader>
