@@ -147,7 +147,7 @@ export default function Contact() {
               >
                 <CardContent className="pt-10 pb-8">
                   <div
-                    className={`bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20 rounded-full p-5 w-20 h-20 mx-auto mb-5 flex items-center justify-center shadow-md`}
+                    className={`bg-gradient-to-br from-primary/10 to-accent/10 rounded-full p-3 sm:p-4 lg:p-5 w-16 sm:w-18 lg:w-20 h-16 sm:h-18 lg:h-20 mx-auto mb-3 sm:mb-4 lg:mb-5 flex items-center justify-center shadow-md`}
                   >
                     <info.icon className={`h-9 w-9 ${info.color}`} />
                   </div>
