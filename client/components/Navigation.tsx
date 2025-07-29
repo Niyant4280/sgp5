@@ -47,7 +47,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 flex-2 justify-center">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-2 justify-center">
             <Link
               to="/search"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
