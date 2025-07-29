@@ -73,7 +73,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   placeholder="e.g., 101, AC-42, DLB-205"
                   value={busNumber}
                   onChange={(e) => setBusNumber(e.target.value)}
-                  className="text-xl h-16 max-w-md w-full text-center bg-white text-red-600 placeholder:text-red-300 border-0 focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
+                  className="text-xl h-16 max-w-md w-full text-center bg-white text-white placeholder:text-red-300 border border-white focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
                 />
                 <Button
                   type="submit"
