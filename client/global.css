@@ -75,7 +75,6 @@
   --black-pure: 0 0% 9%;      /* Pure Black #171717 */
   --white-pure: 0 0% 100%;    /* Pure White #FFFFFF */
   --red-light: 0 100% 90%;    /* Light Red #FCA5A5 */
-  --red-dark: 0 84% 40%;      /* Dark Red #B91C1C */
 }
 
 @layer utilities {
