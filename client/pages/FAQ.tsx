@@ -171,7 +171,7 @@ export default function FAQ() {
       id: "support",
       title: "Support & Feedback",
       icon: Users,
-      color: "from-indigo-500 to-blue-500",
+      color: "from-gray-800 to-red-500",
       questions: [
         {
           question: "How can I report incorrect bus information?",
