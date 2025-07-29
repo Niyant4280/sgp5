@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      value: "contact@busनियोजक.com",
+      value: "contact@bus���ियोजक.com",
       description: "Get in touch via email",
       color: "text-primary",
     },
@@ -348,7 +348,7 @@ export default function Contact() {
             ].map((faq, index) => (
               <Card
                 key={index}
-                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl"
+                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 rounded-2xl"
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-3 text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
