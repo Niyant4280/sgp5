@@ -31,7 +31,7 @@ export default function About() {
       <Navigation />
       <section className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white dark:from-gray-950 dark:via-red-950/10 dark:to-gray-950">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               About <span className="text-black dark:text-white">Bus</span>
