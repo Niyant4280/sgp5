@@ -60,7 +60,7 @@ export default function Contact() {
       title: "Call Us",
       value: "+91-9876-543-210",
       description: "24/7 customer support",
-      color: "text-green-600 dark:text-green-400",
+      color: "text-green-600",
     },
     {
       icon: MapPin,
