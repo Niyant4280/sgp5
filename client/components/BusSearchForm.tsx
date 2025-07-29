@@ -30,12 +30,14 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
   };
 
   return (
-    <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
-      <Card className="w-full max-w-4xl lg:w-full bg-primary text-white border-2 border-white shadow-lg p-10 flex flex-col items-center text-center rounded-3xl dark:bg-primary dark:text-primary-foreground dark:border-red-200">
-        <CardHeader className="mb-4 border-none">
-          <Search className="h-12 w-12 mx-auto mb-6 text-white dark:text-primary-foreground" />
-          <CardTitle className="text-4xl md:text-5xl font-bold mb-4 text-white">Find Your Bus</CardTitle>
-          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+    <div className="w-full flex flex-col lg:flex-row items-center justify-center">
+      <Card className="w-full max-w-6xl bg-gradient-to-br from-red-600 via-red-500 to-red-700 text-white border-0 shadow-2xl p-12 lg:p-16 flex flex-col items-center text-center rounded-3xl dark:bg-gradient-to-br dark:from-red-600 dark:via-red-500 dark:to-red-700 dark:text-white transform hover:scale-[1.02] transition-all duration-300">
+        <CardHeader className="mb-6 border-none">
+          <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-8 shadow-lg">
+            <Search className="h-16 w-16 mx-auto text-white" />
+          </div>
+          <CardTitle className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-lg">Find Your Bus</CardTitle>
+          <p className="text-xl md:text-2xl mb-10 text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
             Search for your next ride by bus number or plan your route with ease. Fast, accurate, and always up-to-date!
           </p>
         </CardHeader>
