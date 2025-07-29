@@ -278,8 +278,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </p>
         </div>
         <div className="text-center p-4">
-          <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <Zap className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+          <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Zap className="h-6 w-6 text-red-600 dark:text-red-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Instant Results
