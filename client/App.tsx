@@ -39,6 +39,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/advertise-with-us" element={<AdvertiseWithUs />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/help" element={<FAQ />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
           {/* Placeholder routes for future implementation */}
