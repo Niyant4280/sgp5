@@ -169,7 +169,7 @@ export default function TermsOfService() {
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• All trademarks, logos, and service marks are our property</li>
-                  <li>�� You may not copy, modify, or distribute our content without permission</li>
+                  <li>• You may not copy, modify, or distribute our content without permission</li>
                   <li>• You may use our service for personal, non-commercial purposes</li>
                 </ul>
               </div>
@@ -194,7 +194,7 @@ export default function TermsOfService() {
                 <div className="flex items-start space-x-3">
                   <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-red-800 dark:text-red-200 mb-1">
+                    <h4 className="font-semibold text-red-800  mb-1">
                       Important Notice
                     </h4>
                     <p className="text-sm text-red-700 dark:text-red-300">
