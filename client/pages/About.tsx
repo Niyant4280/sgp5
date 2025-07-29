@@ -77,11 +77,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-green-500 bg-green-50/40 dark:bg-green-900/10">
+            <Card className="border-l-4 border-green-500 bg-green-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Users className="h-7 w-7 text-green-600" />
-                  <h2 className="text-2xl font-semibold text-green-700 dark:text-green-300">
+                  <h2 className="text-2xl font-semibold text-green-700">
                     Key Features for Passengers
                   </h2>
                 </div>
@@ -105,11 +105,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-yellow-500 bg-yellow-50/40 dark:bg-yellow-900/10">
+            <Card className="border-l-4 border-yellow-500 bg-yellow-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <MapPin className="h-7 w-7 text-yellow-600" />
-                  <h2 className="text-2xl font-semibold text-yellow-700 dark:text-yellow-300">
+                  <h2 className="text-2xl font-semibold text-yellow-700">
                     Technology Highlights
                   </h2>
                 </div>
@@ -138,11 +138,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-red-500 bg-red-50/40 dark:bg-red-900/10">
+            <Card className="border-l-4 border-red-500 bg-red-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Zap className="h-7 w-7 text-red-600" />
-                  <h2 className="text-2xl font-semibold text-red-700 dark:text-red-300">
+                  <h2 className="text-2xl font-semibold text-red-700">
                     Why Choose Busनियोजक?
                   </h2>
                 </div>
@@ -183,8 +183,8 @@ export default function About() {
                   <Bus className="h-6 w-6" />
                 </div>
                 <span className="text-xl font-bold text-foreground">
-                  <span className="text-black dark:text-white">Bus</span>
-                  <span className="text-red-600 dark:text-red-400">नियोजक</span>
+                  <span className="text-black">Bus</span>
+                  <span className="text-red-600">नियोजक</span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-4">
@@ -280,10 +280,10 @@ export default function About() {
             <p>
               Moving Delhi Forward — One Smart Bus at a Time. Experience
               seamless, data-driven transit with{" "}
-              <span className="text-black dark:text-white font-semibold">
+              <span className="text-black font-semibold">
                 Bus
               </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
+              <span className="text-red-600 font-semibold">
                 नियोजक
               </span>
               .
