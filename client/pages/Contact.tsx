@@ -84,24 +84,28 @@ export default function Contact() {
       title: "Bus Operations",
       description: "Route queries, schedule information, and bus tracking",
       email: "operations@busनियोजक.com",
+      color: "from-red-500 to-orange-500",
     },
     {
       icon: HeadphonesIcon,
       title: "Technical Support",
       description: "App issues, website problems, and technical assistance",
       email: "support@busनियोजक.com",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       icon: MessageCircle,
       title: "General Inquiries",
       description: "General questions, feedback, and suggestions",
-      email: "hello@busनियोजक.com",
+      email: "hello@busनियो���क.com",
+      color: "from-green-500 to-emerald-500",
     },
     {
       icon: Globe,
       title: "Partnership",
       description: "Business partnerships and collaboration opportunities",
       email: "partnership@busनियोजक.com",
+      color: "from-purple-500 to-pink-500",
     },
   ];
 
@@ -218,7 +222,7 @@ export default function Contact() {
 
                     <Button
                       type="submit"
-                      className="w-full shadow-md hover:shadow-xl transition-all duration-200 rounded-lg"
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
                       disabled={loading}
                     >
                       {loading ? (
@@ -242,7 +246,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="mb-8">
                 <h2 className="text-3xl font-bold text-foreground dark:text-white mb-4">
-                  Choose Your Support Type
+                  Choose Your <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Support Type</span>
                 </h2>
                 <p className="text-muted-foreground">
                   Select the most appropriate category for faster assistance
@@ -252,11 +256,11 @@ export default function Contact() {
               {supportTypes.map((type, index) => (
                 <Card
                   key={index}
-                  className="shadow-lg border-0 bg-white/90 dark:bg-gray-900/80 hover:shadow-2xl transition-all duration-300 rounded-2xl"
+                  className="shadow-lg border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 hover:shadow-2xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-gradient-to-br from-primary to-accent text-white p-4 rounded-xl shadow-md flex-shrink-0">
+                      <div className={`bg-gradient-to-br ${type.color} text-white p-4 rounded-xl shadow-md flex-shrink-0`}>
                         <type.icon className="h-6 w-6" />
                       </div>
                       <div className="flex-1">
@@ -285,7 +289,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
-              Frequently Asked Questions
+              <span className="text-blue-600 dark:text-blue-400">Frequently Asked</span> <span className="text-purple-600 dark:text-purple-400">Questions</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Quick answers to common questions
@@ -315,9 +319,9 @@ export default function Contact() {
                   "We're constantly expanding our coverage. Currently, we track 50+ major routes and are adding new routes every month based on user demand.",
               },
             ].map((faq, index) => (
-              <Card key={index} className="shadow-lg border-0 bg-white/90 dark:bg-gray-900/80 rounded-2xl">
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-3 text-primary">
+                  <h3 className="text-lg font-bold mb-3 text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {faq.question}
                   </h3>
                   <p className="text-muted-foreground">{faq.answer}</p>
