@@ -399,7 +399,7 @@ export default function AdvertiseWithUs() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-orange-100 dark:bg-orange-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-orange-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-orange-600 font-bold text-sm">
                         4
                       </span>
