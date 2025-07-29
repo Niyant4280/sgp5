@@ -59,7 +59,7 @@ export default function FAQ() {
       id: "search",
       title: "Bus Search & Routes",
       icon: Search,
-      color: "from-green-500 to-emerald-500",
+      color: "from-black to-red-500",
       questions: [
         {
           question: "How do I search for a specific bus?",
