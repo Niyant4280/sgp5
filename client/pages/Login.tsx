@@ -241,7 +241,7 @@ export default function Login() {
                     <Button
                       variant="link"
                       size="sm"
-                      className="text-xs p-0 h-auto text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300"
+                      className="text-xs p-0 h-auto text-red-600 hover:text-red-700"
                       type="button"
                     >
                       Forgot password?
