@@ -212,7 +212,7 @@ export default function FAQ() {
               </span>
               <span className="mx-auto"> Questions</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
               Find answers to common questions about{" "}
               <span className="text-black dark:text-white font-semibold">
                 Bus
