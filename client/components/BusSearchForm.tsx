@@ -147,9 +147,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
                 {/* Popular Buses */}
                 <div className="mt-6 sm:mt-8">
-                  <p className="text-sm text-gray-500 mb-3">
-                    Popular buses:
-                  </p>
+                  <p className="text-sm text-gray-500 mb-3">Popular buses:</p>
                   <div className="flex flex-wrap gap-2">
                     {["101", "205", "AC-42", "DLB-104", "Red Line"].map(
                       (bus) => (
@@ -220,9 +218,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
                 {/* Quick Route Suggestions */}
                 <div className="mt-6 sm:mt-8">
-                  <p className="text-sm text-gray-500 mb-3">
-                    Popular routes:
-                  </p>
+                  <p className="text-sm text-gray-500 mb-3">Popular routes:</p>
                   <div className="space-y-2">
                     {[
                       { from: "Central Station", to: "Airport" },

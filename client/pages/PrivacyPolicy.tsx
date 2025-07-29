@@ -40,7 +40,10 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Your privacy is important to us. Learn how <span className="text-black  font-semibold">Bus</span><span className="text-red-600  font-semibold">नियोजक</span> collects, uses, and protects your information.
+            Your privacy is important to us. Learn how{" "}
+            <span className="text-black  font-semibold">Bus</span>
+            <span className="text-red-600  font-semibold">नियोजक</span>{" "}
+            collects, uses, and protects your information.
           </p>
           <p className="text-sm text-muted-foreground mt-4">
             Last updated: January 15, 2025
@@ -58,11 +61,16 @@ export default function PrivacyPolicy() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold mb-2 text-primary">Personal Information</h4>
+                <h4 className="font-semibold mb-2 text-primary">
+                  Personal Information
+                </h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Name, email address, and phone number when you create an account</span>
+                    <span>
+                      Name, email address, and phone number when you create an
+                      account
+                    </span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -70,12 +78,16 @@ export default function PrivacyPolicy() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Communication records when you contact our support team</span>
+                    <span>
+                      Communication records when you contact our support team
+                    </span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-2 text-primary">Usage Information</h4>
+                <h4 className="font-semibold mb-2 text-primary">
+                  Usage Information
+                </h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -104,16 +116,22 @@ export default function PrivacyPolicy() {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Service Provision</h4>
+                  <h4 className="font-semibold mb-3 text-primary">
+                    Service Provision
+                  </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Provide real-time bus tracking and route information</li>
+                    <li>
+                      • Provide real-time bus tracking and route information
+                    </li>
                     <li>• Personalize your travel experience</li>
                     <li>• Send service notifications and updates</li>
                     <li>• Improve our route recommendations</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Platform Improvement</h4>
+                  <h4 className="font-semibold mb-3 text-primary">
+                    Platform Improvement
+                  </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Analyze usage patterns to enhance features</li>
                     <li>• Conduct research and development</li>
@@ -141,16 +159,23 @@ export default function PrivacyPolicy() {
                       We DO NOT sell your personal information
                     </h4>
                     <p className="text-sm text-green-700 ">
-                      Your data is never sold to third parties for marketing purposes.
+                      Your data is never sold to third parties for marketing
+                      purposes.
                     </p>
                   </div>
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold mb-2 text-primary">Limited Sharing Scenarios</h4>
+                <h4 className="font-semibold mb-2 text-primary">
+                  Limited Sharing Scenarios
+                </h4>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• With Delhi Transport Corporation for service improvement</li>
-                  <li>• With trusted service providers who assist our operations</li>
+                  <li>
+                    • With Delhi Transport Corporation for service improvement
+                  </li>
+                  <li>
+                    • With trusted service providers who assist our operations
+                  </li>
                   <li>• When required by law or legal proceedings</li>
                   <li>• To protect the safety and security of our users</li>
                 </ul>
@@ -168,7 +193,9 @@ export default function PrivacyPolicy() {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Technical Safeguards</h4>
+                  <h4 className="font-semibold mb-3 text-primary">
+                    Technical Safeguards
+                  </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• End-to-end encryption for sensitive data</li>
                     <li>• Secure HTTPS connections</li>
@@ -177,7 +204,9 @@ export default function PrivacyPolicy() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Organizational Measures</h4>
+                  <h4 className="font-semibold mb-3 text-primary">
+                    Organizational Measures
+                  </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Employee training on data protection</li>
                     <li>• Limited access on need-to-know basis</li>
@@ -199,7 +228,8 @@ export default function PrivacyPolicy() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  You have the following rights regarding your personal information:
+                  You have the following rights regarding your personal
+                  information:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-3">
@@ -207,14 +237,18 @@ export default function PrivacyPolicy() {
                       <CheckCircle className="h-4 w-4 text-green-600 mt-1" />
                       <div>
                         <h5 className="font-medium">Access</h5>
-                        <p className="text-sm text-muted-foreground">Request a copy of your data</p>
+                        <p className="text-sm text-muted-foreground">
+                          Request a copy of your data
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600 mt-1" />
                       <div>
                         <h5 className="font-medium">Correction</h5>
-                        <p className="text-sm text-muted-foreground">Update incorrect information</p>
+                        <p className="text-sm text-muted-foreground">
+                          Update incorrect information
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -223,14 +257,18 @@ export default function PrivacyPolicy() {
                       <CheckCircle className="h-4 w-4 text-green-600 mt-1" />
                       <div>
                         <h5 className="font-medium">Deletion</h5>
-                        <p className="text-sm text-muted-foreground">Request data removal</p>
+                        <p className="text-sm text-muted-foreground">
+                          Request data removal
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600 mt-1" />
                       <div>
                         <h5 className="font-medium">Portability</h5>
-                        <p className="text-sm text-muted-foreground">Export your data</p>
+                        <p className="text-sm text-muted-foreground">
+                          Export your data
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -249,25 +287,35 @@ export default function PrivacyPolicy() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  We use cookies and similar technologies to enhance your experience:
+                  We use cookies and similar technologies to enhance your
+                  experience:
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Essential Cookies</h4>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Essential Cookies
+                    </h4>
                     <p className="text-sm text-muted-foreground">
-                      Required for basic functionality like login sessions and security features.
+                      Required for basic functionality like login sessions and
+                      security features.
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Analytics Cookies</h4>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Analytics Cookies
+                    </h4>
                     <p className="text-sm text-muted-foreground">
-                      Help us understand how you use our platform to improve performance.
+                      Help us understand how you use our platform to improve
+                      performance.
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Preference Cookies</h4>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Preference Cookies
+                    </h4>
                     <p className="text-sm text-muted-foreground">
-                      Remember your settings like language and other preferences.
+                      Remember your settings like language and other
+                      preferences.
                     </p>
                   </div>
                 </div>
@@ -286,7 +334,8 @@ export default function PrivacyPolicy() {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  If you have questions about this Privacy Policy or want to exercise your rights, contact us:
+                  If you have questions about this Privacy Policy or want to
+                  exercise your rights, contact us:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
@@ -294,22 +343,28 @@ export default function PrivacyPolicy() {
                       <Mail className="h-5 w-5 text-blue-600" />
                       <div>
                         <h5 className="font-medium">Email</h5>
-                        <p className="text-sm text-muted-foreground">privacy@busनियोजक.com</p>
+                        <p className="text-sm text-muted-foreground">
+                          privacy@busनियोजक.com
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Phone className="h-5 w-5 text-green-600" />
                       <div>
                         <h5 className="font-medium">Phone</h5>
-                        <p className="text-sm text-muted-foreground">+91-9876-543-210</p>
+                        <p className="text-sm text-muted-foreground">
+                          +91-9876-543-210
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div>
                     <h5 className="font-medium mb-2">Mailing Address</h5>
                     <p className="text-sm text-muted-foreground">
-                      Bus नियोजक Privacy Team<br />
-                      New Delhi, India<br />
+                      Bus नियोजक Privacy Team
+                      <br />
+                      New Delhi, India
+                      <br />
                       110001
                     </p>
                   </div>

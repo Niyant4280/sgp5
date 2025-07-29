@@ -280,13 +280,8 @@ export default function About() {
             <p>
               Moving Delhi Forward — One Smart Bus at a Time. Experience
               seamless, data-driven transit with{" "}
-              <span className="text-black font-semibold">
-                Bus
-              </span>
-              <span className="text-red-600 font-semibold">
-                नियोजक
-              </span>
-              .
+              <span className="text-black font-semibold">Bus</span>
+              <span className="text-red-600 font-semibold">नियोजक</span>.
             </p>
           </div>
         </div>

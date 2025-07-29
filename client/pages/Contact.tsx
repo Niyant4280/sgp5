@@ -123,14 +123,10 @@ export default function Contact() {
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Have questions about{" "}
-              <span className="text-black font-semibold">
-                &nbsp;Bus
-              </span>
-              <span className="text-red-600 font-semibold">
-                नियोजक
-              </span>
-              ? Need support? Want to partner with us? We're here to help and
-              excited to connect with you!
+              <span className="text-black font-semibold">&nbsp;Bus</span>
+              <span className="text-red-600 font-semibold">नियोजक</span>? Need
+              support? Want to partner with us? We're here to help and excited
+              to connect with you!
             </p>
           </div>
         </div>
@@ -311,12 +307,8 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              <span className="text-blue-600">
-                Frequently Asked
-              </span>{" "}
-              <span className="text-purple-600">
-                Questions
-              </span>
+              <span className="text-blue-600">Frequently Asked</span>{" "}
+              <span className="text-purple-600">Questions</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Quick answers to common questions
@@ -392,8 +384,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Partner with{" "}
-              <span className="text-black">Bus</span>
+              Partner with <span className="text-black">Bus</span>
               <span className="text-red-600">नियोजक</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

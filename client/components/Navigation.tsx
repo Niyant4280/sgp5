@@ -13,7 +13,6 @@ import {
   HelpCircle,
 } from "lucide-react";
 
-
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -39,9 +38,7 @@ export default function Navigation() {
               </div>
               <span className="text-xl font-bold">
                 <span className="text-black">Bus</span>
-                <span className="text-[rgba(220,38,38,1)]">
-                  नियोजक
-                </span>
+                <span className="text-[rgba(220,38,38,1)]">नियोजक</span>
               </span>
             </Link>
           </div>
