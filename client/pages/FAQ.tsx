@@ -289,7 +289,7 @@ export default function FAQ() {
               >
                 <div className="flex items-center justify-center space-x-4 mb-8">
                   <div
-                    className={`bg-gradient-to-br ${category.color} text-white p-3 rounded-xl shadow-lg`}
+                    className="bg-red-500 text-white p-3 rounded-xl shadow-lg"
                   >
                     <category.icon className="h-6 w-6" />
                   </div>
