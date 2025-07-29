@@ -34,12 +34,12 @@ export default function Navigation() {
                 window.location.href = "/";
               }}
             >
-              <div className="bg-red-600 dark:bg-red-500 text-white p-2 rounded-lg shadow-lg hover:bg-red-700 dark:hover:bg-red-600 transition-colors">
+              <div className="bg-red-600 text-white p-2 rounded-lg shadow-lg hover:bg-red-700 transition-colors">
                 <Bus className="h-6 w-6" />
               </div>
               <span className="text-xl font-bold">
-                <span className="text-black dark:text-gray-100">Bus</span>
-                <span className="text-[rgba(220,38,38,1)] dark:text-red-400">
+                <span className="text-black">Bus</span>
+                <span className="text-[rgba(220,38,38,1)]">
                   नियोजक
                 </span>
               </span>
