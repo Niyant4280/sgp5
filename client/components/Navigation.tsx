@@ -21,7 +21,7 @@ export default function Navigation() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-700 shadow-lg transition-colors duration-300">
+    <nav className="bg-white border-b border-gray-200 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Brand */}
