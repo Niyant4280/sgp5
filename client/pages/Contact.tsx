@@ -173,7 +173,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <Card className="shadow-xl border-0 bg-gradient-to-br from-white to-primary/10 dark:from-gray-900 dark:to-primary/10 rounded-2xl">
+              <Card className="shadow-xl border-0 bg-gradient-to-br from-white to-primary/10 rounded-2xl">
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center space-x-3">
                     <div className="bg-primary text-primary-foreground p-3 rounded-lg shadow-md">
