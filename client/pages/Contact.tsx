@@ -260,7 +260,7 @@ export default function Contact() {
             {/* Support Types */}
             <div className="space-y-6">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-foreground dark:text-white mb-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
                   Choose Your{" "}
                   <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Support Type
@@ -394,7 +394,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
               Partner with{" "}
               <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+              <span className="text-red-600 dark:text-red-400">नियोज��</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Reach thousands of daily commuters and grow your business with our
