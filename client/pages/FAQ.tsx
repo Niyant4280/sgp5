@@ -247,7 +247,7 @@ export default function FAQ() {
             {faqCategories.map((category, index) => (
               <Card
                 key={category.id}
-                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-red-600 to-black rounded-2xl hover:scale-[1.02]"
+                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl hover:scale-[1.02]"
               >
                 <CardHeader className="text-center">
                   <div
