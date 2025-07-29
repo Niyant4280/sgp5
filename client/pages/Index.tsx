@@ -285,12 +285,12 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[rgba(220,38,38,1)] text-primary-foreground">
+      <section className="py-12 sm:py-16 bg-[rgba(220,38,38,1)] text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-primary-foreground/90">
+          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-primary-foreground/90">
             Join thousands of users already using&nbsp;
             <span className="font-bold text-white">Bus</span>
             <span className="font-bold text-white">नियोजक</span> for their daily
