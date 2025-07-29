@@ -90,7 +90,7 @@ export default function Contact() {
       icon: HeadphonesIcon,
       title: "Technical Support",
       description: "App issues, website problems, and technical assistance",
-      email: "support@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-blue-500 to-cyan-500",
     },
     {
@@ -104,7 +104,7 @@ export default function Contact() {
       icon: Globe,
       title: "Partnership",
       description: "Business partnerships and collaboration opportunities",
-      email: "partnership@busनि��ोजक.com",
+      email: "partnership@busनियोजक.com",
       color: "from-purple-500 to-pink-500",
     },
   ];
