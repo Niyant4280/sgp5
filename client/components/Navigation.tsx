@@ -136,17 +136,49 @@ export default function Navigation() {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex items-center space-x-3 flex-1 justify-end">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              asChild
-            >
-              <Link to="/login">
-                <User className="h-4 w-4 mr-2" />
-                Login
-              </Link>
-            </Button>
+            {isLoggedIn ? (
+              <>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  asChild
+                >
+                  <Link to={isAdmin ? "/admin" : "/dashboard"}>
+                    <Settings className="h-4 w-4 mr-2" />
+                    {isAdmin ? "Admin Panel" : "Dashboard"}
+                  </Link>
+                </Button>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                    {user?.name.split(' ').map(n => n[0]).join('') || "U"}
+                  </div>
+                  <div className="hidden xl:block">
+                    <p className="text-sm font-medium text-gray-900">{user?.name}</p>
+                  </div>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </Button>
+              </>
+            ) : (
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                asChild
+              >
+                <Link to="/login">
+                  <User className="h-4 w-4 mr-2" />
+                  Login
+                </Link>
+              </Button>
+            )}
           </div>
 
           {/* Mobile menu button */}
