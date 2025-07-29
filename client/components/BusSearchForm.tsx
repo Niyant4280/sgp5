@@ -267,8 +267,8 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           </p>
         </div>
         <div className="text-center p-4">
-          <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
-            <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+          <div className="bg-gray-100 dark:bg-gray-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <MapPin className="h-6 w-6 text-black dark:text-gray-400" />
           </div>
           <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
             Smart Routing
