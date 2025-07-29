@@ -76,16 +76,16 @@ export default function Index() {
               Plan your journey, discover the best routes, and experience
               seamless bus travel—all in one place.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge className="text-sm bg-blue-500 dark:bg-gray-800 text-white hover:bg-blue-600 dark:hover:bg-gray-700 transition-colors px-4 py-2 font-semibold">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-8 px-4">
+              <Badge className="text-xs sm:text-sm bg-blue-500 text-white hover:bg-blue-600 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <Clock className="h-3 w-3 mr-1" />
                 Real-time Tracking
               </Badge>
-              <Badge className="text-sm bg-red-600 dark:bg-red-500 text-white hover:bg-red-700 dark:hover:bg-red-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-xs sm:text-sm bg-red-600 text-white hover:bg-red-700 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <MapPin className="h-3 w-3 mr-1" />
                 Route Planning
               </Badge>
-              <Badge className="text-sm bg-green-600 dark:bg-gray-800 text-white hover:bg-green-700 dark:hover:bg-gray-700 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-xs sm:text-sm bg-green-600 text-white hover:bg-green-700 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <Shield className="h-3 w-3 mr-1" />
                 Secure & Reliable
               </Badge>
