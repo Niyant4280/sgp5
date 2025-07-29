@@ -68,9 +68,9 @@ export default function Index() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 pb-7">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
-              Welcome to <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6">
+              Welcome to <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Plan your journey, discover the best routes, and experience
