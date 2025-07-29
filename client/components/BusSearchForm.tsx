@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Search, MapPin, ArrowRight } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Search, MapPin, ArrowRight, Clock, Zap, Navigation as NavigationIcon } from "lucide-react";
 
 interface BusSearchFormProps {
   onSearch: (type: "number" | "route", data: any) => void;
@@ -14,6 +13,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
   const [busNumber, setBusNumber] = useState("");
   const [fromStop, setFromStop] = useState("");
   const [toStop, setToStop] = useState("");
+  const [activeTab, setActiveTab] = useState<"number" | "route">("number");
 
   const handleBusNumberSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,98 +29,230 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
     }
   };
 
+  const quickActions = [
+    { icon: Search, label: "Track Bus", desc: "Live location" },
+    { icon: Clock, label: "Schedules", desc: "Timing info" },
+    { icon: MapPin, label: "Routes", desc: "All stops" },
+  ];
+
   return (
-    <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-      <Card className="w-full max-w-[1241px] bg-[rgba(220,38,38,1)] text-white border-0 shadow-2xl pt-4 px-16 pb-8 flex flex-col items-center text-center rounded-3xl transform hover:scale-[1.02] transition-all duration-300 -ml-1">
-        <CardHeader className="mb-6 border-none">
-          <CardTitle className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 text-white drop-shadow-lg">
+    <div className="w-full max-w-7xl mx-auto">
+      {/* Header Section */}
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-2xl shadow-lg">
+            <Search className="h-8 w-8 text-white" />
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
             Find Your Bus
-          </CardTitle>
-          <p className="text-xl md:text-2xl mb-10 text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
-            Search for your next ride by bus number or plan your route with
-            ease. Fast, accurate, and always up-to-date!
-          </p>
-        </CardHeader>
-        <CardContent className="w-full flex flex-col gap-8">
-          <Tabs defaultValue="number" className="w-full">
-            <TabsList className="flex w-full justify-center gap-4 bg-[rgba(220,38,38,1)] backdrop-blur-sm p-2 rounded-2xl mb-8">
-              <TabsTrigger
-                value="number"
-                className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]"
+          </h2>
+        </div>
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Search by bus number or plan your route between stops. Get real-time updates and never miss your ride.
+        </p>
+      </div>
+
+      {/* Quick Actions */}
+      <div className="grid grid-cols-3 gap-4 mb-8">
+        {quickActions.map((action, index) => (
+          <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
+            <CardContent className="p-4 text-center">
+              <action.icon className="h-6 w-6 mx-auto mb-2 text-blue-600 dark:text-blue-400" />
+              <div className="text-sm font-semibold text-gray-900 dark:text-white">{action.label}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{action.desc}</div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      {/* Main Search Section */}
+      <Card className="border-0 shadow-2xl bg-white dark:bg-gray-900 rounded-3xl overflow-hidden">
+        <CardContent className="p-0">
+          {/* Tab Selection */}
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+            <div className="flex gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-2">
+              <button
+                onClick={() => setActiveTab("number")}
+                className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
+                  activeTab === "number"
+                    ? "bg-white text-blue-600 shadow-lg font-semibold"
+                    : "text-white hover:bg-white/10"
+                }`}
               >
                 <Search className="h-5 w-5" />
-                <span>By Bus Number</span>
-              </TabsTrigger>
-              <TabsTrigger
-                value="route"
-                className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]"
+                <span>Bus Number</span>
+              </button>
+              <button
+                onClick={() => setActiveTab("route")}
+                className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
+                  activeTab === "route"
+                    ? "bg-white text-purple-600 shadow-lg font-semibold"
+                    : "text-white hover:bg-white/10"
+                }`}
               >
                 <MapPin className="h-5 w-5" />
-                <span>By Route</span>
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="number" className="mt-4">
-              <form
-                onSubmit={handleBusNumberSearch}
-                className="flex flex-col gap-6 items-center"
-              >
-                <Input
-                  id="bus-number"
-                  type="text"
-                  placeholder="e.g., 101, AC-42, DLB-205"
-                  value={busNumber}
-                  onChange={(e) => setBusNumber(e.target.value)}
-                  className="text-xl h-16 max-w-md w-full text-center bg-white text-white placeholder:text-red-300 border border-white focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
-                />
-                <Button
-                  type="submit"
-                  className="w-full max-w-md h-16 text-xl bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 font-bold border-0 rounded-2xl shadow-lg disabled:opacity-70"
-                  disabled={!busNumber.trim()}
-                >
-                  <Search className="h-6 w-6 mr-3" />
-                  Search Bus Route
-                </Button>
-              </form>
-            </TabsContent>
-            <TabsContent value="route" className="mt-4">
-              <form
-                onSubmit={handleRouteSearch}
-                className="flex flex-col gap-6 items-center"
-              >
-                <Input
-                  id="from-stop"
-                  type="text"
-                  placeholder="From Stop"
-                  value={fromStop}
-                  onChange={(e) => setFromStop(e.target.value)}
-                  className="text-xl h-16 max-w-md w-full text-center bg-white text-white placeholder:text-red-300 border border-white focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
-                />
-                <div className="flex justify-center">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 shadow-lg">
-                    <ArrowRight className="h-6 w-6 text-white" />
+                <span>Route Planning</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Search Content */}
+          <div className="p-8">
+            {activeTab === "number" ? (
+              <div className="space-y-6">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                    Search by Bus Number
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Enter the bus number to get live tracking and route information
+                  </p>
+                </div>
+                
+                <form onSubmit={handleBusNumberSearch} className="space-y-6">
+                  <div className="relative">
+                    <Input
+                      type="text"
+                      placeholder="e.g., 101, AC-42, DLB-205"
+                      value={busNumber}
+                      onChange={(e) => setBusNumber(e.target.value)}
+                      className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                    />
+                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  </div>
+                  
+                  <Button
+                    type="submit"
+                    disabled={!busNumber.trim()}
+                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <Zap className="h-5 w-5 mr-2" />
+                    Track This Bus
+                  </Button>
+                </form>
+
+                {/* Popular Buses */}
+                <div className="mt-8">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Popular buses:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["101", "205", "AC-42", "DLB-104", "Red Line"].map((bus) => (
+                      <Badge
+                        key={bus}
+                        variant="outline"
+                        className="cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+                        onClick={() => setBusNumber(bus)}
+                      >
+                        {bus}
+                      </Badge>
+                    ))}
                   </div>
                 </div>
-                <Input
-                  id="to-stop"
-                  type="text"
-                  placeholder="To Stop"
-                  value={toStop}
-                  onChange={(e) => setToStop(e.target.value)}
-                  className="text-xl h-16 max-w-md w-full text-center bg-white text-white placeholder:text-red-300 border border-white focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
-                />
-                <Button
-                  type="submit"
-                  className="w-full max-w-md h-16 text-xl bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 font-bold border-0 rounded-2xl shadow-lg disabled:opacity-70"
-                  disabled={!fromStop.trim() || !toStop.trim()}
-                >
-                  <MapPin className="h-6 w-6 mr-3" />
-                  Find Buses
-                </Button>
-              </form>
-            </TabsContent>
-          </Tabs>
+              </div>
+            ) : (
+              <div className="space-y-6">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                    Plan Your Route
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Find the best buses between any two stops
+                  </p>
+                </div>
+
+                <form onSubmit={handleRouteSearch} className="space-y-6">
+                  <div className="space-y-4">
+                    <div className="relative">
+                      <Input
+                        type="text"
+                        placeholder="From (Starting point)"
+                        value={fromStop}
+                        onChange={(e) => setFromStop(e.target.value)}
+                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-purple-500 dark:focus:border-purple-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                      />
+                      <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-green-500" />
+                    </div>
+
+                    <div className="flex justify-center">
+                      <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-full shadow-lg">
+                        <ArrowRight className="h-5 w-5 text-white" />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <Input
+                        type="text"
+                        placeholder="To (Destination)"
+                        value={toStop}
+                        onChange={(e) => setToStop(e.target.value)}
+                        className="h-14 text-lg pl-12 pr-4 rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-purple-500 dark:focus:border-purple-400 transition-colors bg-gray-50 dark:bg-gray-800"
+                      />
+                      <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-red-500" />
+                    </div>
+                  </div>
+
+                  <Button
+                    type="submit"
+                    disabled={!fromStop.trim() || !toStop.trim()}
+                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <NavigationIcon className="h-5 w-5 mr-2" />
+                    Find Best Routes
+                  </Button>
+                </form>
+
+                {/* Quick Route Suggestions */}
+                <div className="mt-8">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Popular routes:</p>
+                  <div className="space-y-2">
+                    {[
+                      { from: "Central Station", to: "Airport" },
+                      { from: "City Mall", to: "University" },
+                      { from: "Tech Park", to: "Metro Station" }
+                    ].map((route, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                        onClick={() => {
+                          setFromStop(route.from);
+                          setToStop(route.to);
+                        }}
+                      >
+                        <span className="text-sm font-medium">{route.from} → {route.to}</span>
+                        <ArrowRight className="h-4 w-4 text-gray-400" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         </CardContent>
       </Card>
+
+      {/* Features */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="text-center p-4">
+          <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Clock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Real-time Updates</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">Live bus locations and arrival times</p>
+        </div>
+        <div className="text-center p-4">
+          <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+          </div>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Smart Routing</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">Best routes with transfer options</p>
+        </div>
+        <div className="text-center p-4">
+          <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-12 h-12 mx-auto mb-3">
+            <Zap className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+          </div>
+          <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Instant Results</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">Fast search with accurate data</p>
+        </div>
+      </div>
     </div>
   );
 }
