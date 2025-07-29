@@ -253,14 +253,45 @@ export default function Navigation() {
                 <span>Help & FAQ</span>
               </Link>
               <div className="border-t border-border pt-2 mt-2">
-                <Link
-                  to="/login"
-                  className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <User className="h-5 w-5" />
-                  <span>Login</span>
-                </Link>
+                {isLoggedIn ? (
+                  <>
+                    <Link
+                      to={isAdmin ? "/admin" : "/dashboard"}
+                      className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <Settings className="h-5 w-5" />
+                      <span>{isAdmin ? "Admin Panel" : "Dashboard"}</span>
+                    </Link>
+                    <div className="flex items-center space-x-2 px-3 py-2">
+                      <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                        {user?.name.split(' ').map(n => n[0]).join('') || "U"}
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">{user?.name}</p>
+                        <p className="text-xs text-gray-500">{user?.email}</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        handleLogout();
+                        setIsMenuOpen(false);
+                      }}
+                      className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted w-full text-left"
+                    >
+                      <span>Logout</span>
+                    </button>
+                  </>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <User className="h-5 w-5" />
+                    <span>Login</span>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
