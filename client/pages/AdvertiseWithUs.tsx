@@ -286,7 +286,7 @@ export default function AdvertiseWithUs() {
                     className={`w-full ${
                       plan.popular
                         ? "bg-blue-600 hover:bg-blue-700 text-white"
-                        : "bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white"
+                        : "bg-gray-100 hover:bg-gray-200 text-gray-900"
                     }`}
                     onClick={() => setSelectedPlan(plan.id)}
                   >
