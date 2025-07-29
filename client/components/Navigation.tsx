@@ -50,10 +50,10 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-2 justify-center">
             <Link
               to="/search"
-              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive("/search")
-                  ? "bg-red-600 dark:bg-red-500 text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+                  ? "bg-red-600 text-white"
+                  : "text-gray-700 hover:text-white hover:bg-red-600"
               }`}
             >
               <Search className="h-4 w-4" />
@@ -61,10 +61,10 @@ export default function Navigation() {
             </Link>
             <Link
               to="/routes"
-              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive("/routes")
-                  ? "bg-red-600 dark:bg-red-500 text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+                  ? "bg-red-600 text-white"
+                  : "text-gray-700 hover:text-white hover:bg-red-600"
               }`}
             >
               <MapPin className="h-4 w-4" />
@@ -72,30 +72,30 @@ export default function Navigation() {
             </Link>
             <Link
               to="/about"
-              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive("/about")
-                  ? "bg-red-600 dark:bg-red-500 text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+                  ? "bg-red-600 text-white"
+                  : "text-gray-700 hover:text-white hover:bg-red-600"
               }`}
             >
               <span>About</span>
             </Link>
             <Link
               to="/contact"
-              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive("/contact")
-                  ? "bg-red-600 dark:bg-red-500 text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+                  ? "bg-red-600 text-white"
+                  : "text-gray-700 hover:text-white hover:bg-red-600"
               }`}
             >
               <span>Contact</span>
             </Link>
             <Link
               to="/faq"
-              className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`flex items-center space-x-1 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive("/faq") || isActive("/help")
-                  ? "bg-red-600 dark:bg-red-500 text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-white hover:bg-red-600 dark:hover:bg-red-500"
+                  ? "bg-red-600 text-white"
+                  : "text-gray-700 hover:text-white hover:bg-red-600"
               }`}
             >
               <HelpCircle className="h-4 w-4" />
