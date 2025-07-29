@@ -233,7 +233,7 @@ export default function Login() {
                       />
                       <Label
                         htmlFor="remember"
-                        className="text-sm cursor-pointer text-foreground dark:text-white"
+                        className="text-sm cursor-pointer text-foreground"
                       >
                         Remember me
                       </Label>
