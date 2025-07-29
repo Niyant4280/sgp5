@@ -101,7 +101,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 onClick={() => setActiveTab("route")}
                 className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
                   activeTab === "route"
-                    ? "bg-white text-purple-600 shadow-lg font-semibold"
+                    ? "bg-white text-black shadow-lg font-semibold"
                     : "text-white hover:bg-white/10"
                 }`}
               >
