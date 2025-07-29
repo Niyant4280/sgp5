@@ -165,7 +165,7 @@ export default function Navigation() {
               </Link>
               <Link
                 to="/about"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-white hover:bg-red-100 dark:hover:bg-gray-700 transition-colors"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-700 hover:bg-red-100 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
