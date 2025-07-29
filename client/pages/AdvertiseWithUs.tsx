@@ -356,7 +356,7 @@ export default function AdvertiseWithUs() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-blue-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-blue-600 font-bold text-sm">1</span>
                     </div>
                     <div>
