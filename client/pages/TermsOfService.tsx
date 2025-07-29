@@ -40,7 +40,7 @@ export default function TermsOfService() {
             Terms of Service
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Please read these terms carefully before using <span className="text-black  font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> services.
+            Please read these terms carefully before using <span className="text-black  font-semibold">Bus</span><span className="text-red-600  font-semibold">नियोजक</span> services.
           </p>
           <p className="text-sm text-muted-foreground mt-4">
             Last updated: January 15, 2025
