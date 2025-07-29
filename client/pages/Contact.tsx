@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      value: "busniyojak@gmail.com",
+      value: "busniyojak.com",
       description: "Get in touch via email",
       color: "text-primary",
     },
