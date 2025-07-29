@@ -49,7 +49,7 @@ export default function TermsOfService() {
 
         {/* Content */}
         <div className="space-y-8">
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <CheckCircle className="h-6 w-6 text-green-600" />
@@ -76,7 +76,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Users className="h-6 w-6 text-blue-600" />
@@ -121,7 +121,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Shield className="h-6 w-6 text-purple-600" />
@@ -154,7 +154,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Scale className="h-6 w-6 text-green-600" />
@@ -182,7 +182,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <AlertTriangle className="h-6 w-6 text-red-600" />
@@ -215,7 +215,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Users className="h-6 w-6 text-blue-600" />
@@ -243,7 +243,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <FileText className="h-6 w-6 text-purple-600" />
@@ -268,7 +268,7 @@ export default function TermsOfService() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Scale className="h-6 w-6 text-green-600" />
