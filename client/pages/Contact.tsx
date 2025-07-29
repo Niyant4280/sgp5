@@ -274,7 +274,7 @@ export default function Contact() {
               {supportTypes.map((type, index) => (
                 <Card
                   key={index}
-                  className="shadow-lg border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 hover:shadow-2xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
+                  className="shadow-lg border-0 bg-gradient-to-br from-white to-blue-50 hover:shadow-2xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
@@ -394,7 +394,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
               Partner with{" "}
               <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोज��</span>
+              <span className="text-red-600 dark:text-red-400">नियोजक</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Reach thousands of daily commuters and grow your business with our
