@@ -27,27 +27,27 @@ import {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white">
       <Navigation />
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white dark:from-gray-950 dark:via-red-950/10 dark:to-gray-950">
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-red-50/30 to-white">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              About <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+              About <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
-            <span className="inline-block text-lg text-gray-700 dark:text-gray-300 font-medium mb-2">
+            <span className="inline-block text-lg text-gray-700 font-medium mb-2">
               Empowering DTC with Smart Transit Solutions
             </span>
           </div>
 
           <div className="space-y-8">
-            <Card className="border-l-4 border-blue-500 bg-blue-50/40 dark:bg-blue-900/10">
+            <Card className="border-l-4 border-blue-500 bg-blue-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Globe className="h-7 w-7 text-blue-600" />
-                  <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-300">
+                  <h2 className="text-2xl font-semibold text-blue-700">
                     Our Mission
                   </h2>
                 </div>
@@ -77,11 +77,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-green-500 bg-green-50/40 dark:bg-green-900/10">
+            <Card className="border-l-4 border-green-500 bg-green-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Users className="h-7 w-7 text-green-600" />
-                  <h2 className="text-2xl font-semibold text-green-700 dark:text-green-300">
+                  <h2 className="text-2xl font-semibold text-green-700">
                     Key Features for Passengers
                   </h2>
                 </div>
@@ -105,11 +105,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-yellow-500 bg-yellow-50/40 dark:bg-yellow-900/10">
+            <Card className="border-l-4 border-yellow-500 bg-yellow-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <MapPin className="h-7 w-7 text-yellow-600" />
-                  <h2 className="text-2xl font-semibold text-yellow-700 dark:text-yellow-300">
+                  <h2 className="text-2xl font-semibold text-yellow-700">
                     Technology Highlights
                   </h2>
                 </div>
@@ -138,11 +138,11 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-red-500 bg-red-50/40 dark:bg-red-900/10">
+            <Card className="border-l-4 border-red-500 bg-red-50/40">
               <CardContent className="py-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Zap className="h-7 w-7 text-red-600" />
-                  <h2 className="text-2xl font-semibold text-red-700 dark:text-red-300">
+                  <h2 className="text-2xl font-semibold text-red-700">
                     Why Choose Busनियोजक?
                   </h2>
                 </div>
@@ -183,8 +183,8 @@ export default function About() {
                   <Bus className="h-6 w-6" />
                 </div>
                 <span className="text-xl font-bold text-foreground">
-                  <span className="text-black dark:text-white">Bus</span>
-                  <span className="text-red-600 dark:text-red-400">नियोजक</span>
+                  <span className="text-black">Bus</span>
+                  <span className="text-red-600">नियोजक</span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-4">
@@ -280,13 +280,8 @@ export default function About() {
             <p>
               Moving Delhi Forward — One Smart Bus at a Time. Experience
               seamless, data-driven transit with{" "}
-              <span className="text-black dark:text-white font-semibold">
-                Bus
-              </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
-                नियोजक
-              </span>
-              .
+              <span className="text-black font-semibold">Bus</span>
+              <span className="text-red-600 font-semibold">नियोजक</span>.
             </p>
           </div>
         </div>

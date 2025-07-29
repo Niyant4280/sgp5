@@ -55,44 +55,6 @@
 
     --sidebar-ring: 0 84% 60%;
   }
-
-  .dark {
-    --background: 0 0% 9%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 84% 60%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 0 0% 100%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
-
-    --accent: 0 84% 88%;
-    --accent-foreground: 0 0% 9%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 0 84% 60%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
 }
 
 @layer base {
@@ -107,25 +69,30 @@
 
 /* Custom CSS Variables for Classic Bold theme */
 :root {
-  --red-pure: 0 84% 60%;      /* Pure Red #EF4444 */
-  --black-pure: 0 0% 9%;      /* Pure Black #171717 */
-  --white-pure: 0 0% 100%;    /* Pure White #FFFFFF */
-  --red-light: 0 100% 90%;    /* Light Red #FCA5A5 */
-  --red-dark: 0 84% 40%;      /* Dark Red #B91C1C */
+  --red-pure: 0 84% 60%; /* Pure Red #EF4444 */
+  --black-pure: 0 0% 9%; /* Pure Black #171717 */
+  --white-pure: 0 0% 100%; /* Pure White #FFFFFF */
+  --red-light: 0 100% 90%; /* Light Red #FCA5A5 */
 }
 
 @layer utilities {
   .bg-grid-pattern {
-    background-image: radial-gradient(circle at 1px 1px, rgba(239, 68, 68, 0.08) 1px, transparent 0);
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(239, 68, 68, 0.08) 1px,
+      transparent 0
+    );
     background-size: 20px 20px;
   }
 
   .bg-gradient-red {
-    background: linear-gradient(135deg,
+    background: linear-gradient(
+      135deg,
       white 0%,
       hsl(var(--rose)) 30%,
       white 70%,
-      white 100%);
+      white 100%
+    );
   }
 
   .bg-white-clean {
@@ -188,37 +155,52 @@
   }
 
   .handwritten {
-    font-family: 'Comic Sans MS', 'Marker Felt', 'Kristen ITC', fantasy;
+    font-family: "Comic Sans MS", "Marker Felt", "Kristen ITC", fantasy;
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--cherry)), hsl(var(--rose)));
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--cherry)),
+      hsl(var(--rose))
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .btn-red-gradient {
-    background: linear-gradient(45deg,
+    background: linear-gradient(
+      45deg,
       hsl(var(--primary)),
       hsl(var(--cherry)),
       hsl(var(--crimson)),
-      hsl(var(--wine)));
+      hsl(var(--wine))
+    );
     background-size: 300% 300%;
     animation: red-shift 3s ease infinite;
   }
 
   .btn-soft-red {
-    background: linear-gradient(135deg,
+    background: linear-gradient(
+      135deg,
       white 0%,
       white 80%,
-      hsl(var(--blush)) 100%);
+      hsl(var(--blush)) 100%
+    );
   }
 
   @keyframes red-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .floating {
@@ -226,7 +208,12 @@
   }
 
   @keyframes floating {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }

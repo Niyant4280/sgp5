@@ -60,32 +60,32 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white dark:bg-gray-950">
+      <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pb-7">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 pb-7">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
-              Welcome to <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6">
+              Welcome to <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Plan your journey, discover the best routes, and experience
               seamless bus travel—all in one place.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge className="text-sm bg-blue-500 dark:bg-gray-800 text-white hover:bg-blue-600 dark:hover:bg-gray-700 transition-colors px-4 py-2 font-semibold">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-8 px-4">
+              <Badge className="text-xs sm:text-sm bg-blue-500 text-white hover:bg-blue-600 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <Clock className="h-3 w-3 mr-1" />
                 Real-time Tracking
               </Badge>
-              <Badge className="text-sm bg-red-600 dark:bg-red-500 text-white hover:bg-red-700 dark:hover:bg-red-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-xs sm:text-sm bg-red-600 text-white hover:bg-red-700 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <MapPin className="h-3 w-3 mr-1" />
                 Route Planning
               </Badge>
-              <Badge className="text-sm bg-green-600 dark:bg-gray-800 text-white hover:bg-green-700 dark:hover:bg-gray-700 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-xs sm:text-sm bg-green-600 text-white hover:bg-green-700 transition-colors px-3 sm:px-4 py-1 sm:py-2 font-semibold">
                 <Shield className="h-3 w-3 mr-1" />
                 Secure & Reliable
               </Badge>
@@ -93,13 +93,13 @@ export default function Index() {
           </div>
 
           {/* Search Form */}
-          <div className="mb-16">
+          <div className="mb-8 sm:mb-12 lg:mb-16">
             <BusSearchForm onSearch={handleSearch} />
           </div>
 
           {/* Search Results */}
           {searchResults && (
-            <div className="mb-16">
+            <div className="mb-8 sm:mb-12 lg:mb-16 px-4">
               <Card className="max-w-2xl mx-auto">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
@@ -123,7 +123,7 @@ export default function Index() {
                           Active
                         </Badge>
                       </div>
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <p className="text-sm text-muted-foreground">
                             Next Departure
@@ -179,22 +179,22 @@ export default function Index() {
       {/* Features Section */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>?
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Why Choose <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
               Smart tools and real-time insights for a smoother, more connected
               bus experience—for everyone.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-red-100 dark:bg-red-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <MapPin className="h-8 w-8 text-red-600 dark:text-red-400" />
+                <div className="bg-red-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <MapPin className="h-8 w-8 text-red-600" />
                 </div>
                 <CardTitle>Real-time Tracking</CardTitle>
               </CardHeader>
@@ -208,8 +208,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Bus className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-blue-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Bus className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle>Route Planning</CardTitle>
               </CardHeader>
@@ -223,8 +223,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-blue-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Users className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle>Community Support</CardTitle>
               </CardHeader>
@@ -238,8 +238,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <TrendingUp className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                <div className="bg-purple-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <TrendingUp className="h-8 w-8 text-purple-600" />
                 </div>
                 <CardTitle>Smart Insights</CardTitle>
               </CardHeader>
@@ -253,8 +253,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-orange-100 dark:bg-orange-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-orange-600 dark:text-orange-400" />
+                <div className="bg-orange-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="h-8 w-8 text-orange-600" />
                 </div>
                 <CardTitle>Safe & Secure</CardTitle>
               </CardHeader>
@@ -268,8 +268,8 @@ export default function Index() {
 
             <Card className="text-center transition-shadow transform hover:shadow-2xl hover:-translate-y-1 duration-200">
               <CardHeader>
-                <div className="bg-yellow-100 dark:bg-yellow-900/20 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Zap className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                <div className="bg-yellow-100 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <Zap className="h-8 w-8 text-yellow-600" />
                 </div>
                 <CardTitle>Instant Updates</CardTitle>
               </CardHeader>
@@ -285,12 +285,12 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[rgba(220,38,38,1)] text-primary-foreground">
+      <section className="py-12 sm:py-16 bg-[rgba(220,38,38,1)] text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-primary-foreground/90">
+          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-primary-foreground/90">
             Join thousands of users already using&nbsp;
             <span className="font-bold text-white">Bus</span>
             <span className="font-bold text-white">नियोजक</span> for their daily
@@ -315,16 +315,16 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-background border-t border-border py-12">
+      <footer className="bg-background border-t border-border py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="col-span-1 sm:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="bg-primary p-2 rounded-lg">
                   <Bus className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-xl font-bold text-foreground">
-                  <span className="text-black dark:text-white">Bus</span>
+                <span className="text-lg sm:text-xl font-bold text-foreground">
+                  <span className="text-black">Bus</span>
                   <span className="text-[rgba(220,38,38,1)]">नियोजक</span>
                 </span>
               </div>

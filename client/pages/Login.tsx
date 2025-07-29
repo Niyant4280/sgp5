@@ -107,286 +107,313 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/30 dark:from-gray-950 dark:via-gray-900 dark:to-red-950/20">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/30">
       <Navigation />
 
       <div className="flex items-center justify-center py-12 px-4">
         {/* Hero Section */}
         <div className="w-full max-w-6xl">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Welcome to <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+              Welcome to <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Join thousands of commuters who trust us for their daily travel needs
+              Join thousands of commuters who trust us for their daily travel
+              needs
             </p>
           </div>
 
-        <Card
-          className="w-full max-w-md mx-auto shadow-2xl border-2 border-red-200 dark:border-red-800 bg-gradient-to-br from-white to-red-50/30 dark:from-gray-900 dark:to-red-950/20"
-          style={{ borderRadius: "24px" }}
-        >
-          <CardHeader className="text-center">
-            <div className="bg-gradient-to-br from-red-600 to-red-800 dark:from-red-500 dark:to-red-700 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-2xl">
-              <Bus className="h-10 w-10" />
-            </div>
-            <CardTitle className="text-2xl font-bold text-foreground dark:text-white">
-              Welcome to <span className="text-black">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
-            </CardTitle>
-            <p className="text-muted-foreground mt-2">
-              Join thousands of happy commuters!
-            </p>
-          </CardHeader>
-          <CardContent>
-            {error && (
-              <Alert variant="destructive" className="mb-6">
-                <AlertCircle className="h-4 w-4" />
-                <AlertDescription>{error}</AlertDescription>
-              </Alert>
-            )}
+          <Card
+            className="w-full max-w-md mx-auto shadow-2xl border-2 border-red-200 bg-gradient-to-br from-white to-red-50/30"
+            style={{ borderRadius: "24px" }}
+          >
+            <CardHeader className="text-center">
+              <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-2xl">
+                <Bus className="h-10 w-10" />
+              </div>
+              <CardTitle className="text-2xl font-bold text-foreground">
+                Welcome to <span className="text-black">Bus</span>
+                <span className="text-red-600">नियोजक</span>
+              </CardTitle>
+              <p className="text-muted-foreground mt-2">
+                Join thousands of happy commuters!
+              </p>
+            </CardHeader>
+            <CardContent>
+              {error && (
+                <Alert variant="destructive" className="mb-6">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertDescription>{error}</AlertDescription>
+                </Alert>
+              )}
 
-            {success && (
-              <Alert className="mb-6 border-green-200 bg-green-50">
-                <CheckCircle className="h-4 w-4 text-green-600" />
-                <AlertDescription className="text-green-800">
-                  {success}
-                </AlertDescription>
-              </Alert>
-            )}
+              {success && (
+                <Alert className="mb-6 border-green-200 bg-green-50">
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <AlertDescription className="text-green-800">
+                    {success}
+                  </AlertDescription>
+                </Alert>
+              )}
 
-            <Tabs defaultValue="login" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 bg-red-100 dark:bg-red-950/30 p-1 rounded-2xl border border-red-200 dark:border-red-800">
-                <TabsTrigger
-                  value="login"
-                  className="rounded-xl data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-sm hover:bg-red-50 dark:hover:bg-red-900/20 transition-all"
-                >
-                  Login
-                </TabsTrigger>
-                <TabsTrigger
-                  value="register"
-                  className="rounded-xl data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-400 data-[state=active]:shadow-sm hover:bg-red-50 dark:hover:bg-red-900/20 transition-all"
-                >
-                  Register
-                </TabsTrigger>
-              </TabsList>
+              <Tabs defaultValue="login" className="w-full">
+                <TabsList className="grid w-full grid-cols-2 bg-red-100 p-1 rounded-2xl border border-red-200">
+                  <TabsTrigger
+                    value="login"
+                    className="rounded-xl data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-sm hover:bg-red-50 transition-all"
+                  >
+                    Login
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="register"
+                    className="rounded-xl data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-sm hover:bg-red-50 transition-all"
+                  >
+                    Register
+                  </TabsTrigger>
+                </TabsList>
 
-              <TabsContent value="login">
-                <form onSubmit={handleLogin} className="space-y-6 mt-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="login-email" className="text-foreground dark:text-white">Email Address</Label>
-                    <div className="relative">
-                      <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="login-email"
-                        type="email"
-                        placeholder="your@email.com"
-                        value={loginEmail}
-                        onChange={(e) => setLoginEmail(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        required
-                        disabled={loading}
-                      />
+                <TabsContent value="login">
+                  <form onSubmit={handleLogin} className="space-y-6 mt-6">
+                    <div className="space-y-2">
+                      <Label htmlFor="login-email" className="text-foreground">
+                        Email Address
+                      </Label>
+                      <div className="relative">
+                        <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="login-email"
+                          type="email"
+                          placeholder="your@email.com"
+                          value={loginEmail}
+                          onChange={(e) => setLoginEmail(e.target.value)}
+                          className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          required
+                          disabled={loading}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="login-password" className="text-foreground dark:text-white">Password</Label>
-                    <div className="relative">
-                      <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="login-password"
-                        type={showLoginPassword ? "text" : "password"}
-                        placeholder="Enter your password"
-                        value={loginPassword}
-                        onChange={(e) => setLoginPassword(e.target.value)}
-                        className="pl-10 pr-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        required
-                        disabled={loading}
-                      />
-                      <Button
-                        type="button"
-                        variant="ghost"
-                        size="sm"
-                        className="absolute right-1 top-1 h-10 w-10 p-0"
-                        onClick={() => setShowLoginPassword(!showLoginPassword)}
-                        disabled={loading}
+                    <div className="space-y-2">
+                      <Label
+                        htmlFor="login-password"
+                        className="text-foreground"
                       >
-                        {showLoginPassword ? (
-                          <EyeOff className="h-4 w-4" />
-                        ) : (
-                          <Eye className="h-4 w-4" />
-                        )}
+                        Password
+                      </Label>
+                      <div className="relative">
+                        <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="login-password"
+                          type={showLoginPassword ? "text" : "password"}
+                          placeholder="Enter your password"
+                          value={loginPassword}
+                          onChange={(e) => setLoginPassword(e.target.value)}
+                          className="pl-10 pr-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          required
+                          disabled={loading}
+                        />
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="sm"
+                          className="absolute right-1 top-1 h-10 w-10 p-0"
+                          onClick={() =>
+                            setShowLoginPassword(!showLoginPassword)
+                          }
+                          disabled={loading}
+                        >
+                          {showLoginPassword ? (
+                            <EyeOff className="h-4 w-4" />
+                          ) : (
+                            <Eye className="h-4 w-4" />
+                          )}
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-2">
+                        <Checkbox
+                          id="remember"
+                          checked={rememberMe}
+                          onCheckedChange={(checked) =>
+                            setRememberMe(checked as boolean)
+                          }
+                          disabled={loading}
+                        />
+                        <Label
+                          htmlFor="remember"
+                          className="text-sm cursor-pointer text-foreground"
+                        >
+                          Remember me
+                        </Label>
+                      </div>
+                      <Button
+                        variant="link"
+                        size="sm"
+                        className="text-xs p-0 h-auto text-red-600 hover:text-red-700"
+                        type="button"
+                      >
+                        Forgot password?
                       </Button>
                     </div>
-                  </div>
 
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2">
-                      <Checkbox
-                        id="remember"
-                        checked={rememberMe}
-                        onCheckedChange={(checked) =>
-                          setRememberMe(checked as boolean)
-                        }
-                        disabled={loading}
-                      />
+                    <Button
+                      type="submit"
+                      className="w-full h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <>
+                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                          Signing in...
+                        </>
+                      ) : (
+                        <>
+                          <User className="h-4 w-4 mr-2" />
+                          Sign In
+                        </>
+                      )}
+                    </Button>
+                  </form>
+                </TabsContent>
+
+                <TabsContent value="register">
+                  <form onSubmit={handleRegister} className="space-y-6 mt-6">
+                    <div className="space-y-2">
                       <Label
-                        htmlFor="remember"
-                        className="text-sm cursor-pointer text-foreground dark:text-white"
+                        htmlFor="register-name"
+                        className="text-foreground"
                       >
-                        Remember me
+                        Full Name
                       </Label>
+                      <div className="relative">
+                        <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="register-name"
+                          type="text"
+                          placeholder="Enter your full name"
+                          value={registerName}
+                          onChange={(e) => setRegisterName(e.target.value)}
+                          className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          required
+                          disabled={loading}
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label
+                        htmlFor="register-email"
+                        className="text-foreground"
+                      >
+                        Email Address
+                      </Label>
+                      <div className="relative">
+                        <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="register-email"
+                          type="email"
+                          placeholder="your@email.com"
+                          value={registerEmail}
+                          onChange={(e) => setRegisterEmail(e.target.value)}
+                          className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          required
+                          disabled={loading}
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="register-phone">
+                        <span className="text-foreground">
+                          Phone Number (Optional)
+                        </span>
+                      </Label>
+                      <div className="relative">
+                        <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="register-phone"
+                          type="tel"
+                          placeholder="+91-9876543210"
+                          value={registerPhone}
+                          onChange={(e) => setRegisterPhone(e.target.value)}
+                          className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          disabled={loading}
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label
+                        htmlFor="register-password"
+                        className="text-foreground"
+                      >
+                        Password
+                      </Label>
+                      <div className="relative">
+                        <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                        <Input
+                          id="register-password"
+                          type={showRegisterPassword ? "text" : "password"}
+                          placeholder="Create a strong password"
+                          value={registerPassword}
+                          onChange={(e) => setRegisterPassword(e.target.value)}
+                          className="pl-10 pr-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
+                          required
+                          disabled={loading}
+                          minLength={6}
+                        />
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="sm"
+                          className="absolute right-1 top-1 h-10 w-10 p-0"
+                          onClick={() =>
+                            setShowRegisterPassword(!showRegisterPassword)
+                          }
+                          disabled={loading}
+                        >
+                          {showRegisterPassword ? (
+                            <EyeOff className="h-4 w-4" />
+                          ) : (
+                            <Eye className="h-4 w-4" />
+                          )}
+                        </Button>
+                      </div>
                     </div>
                     <Button
-                      variant="link"
-                      size="sm"
-                      className="text-xs p-0 h-auto text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300"
-                      type="button"
+                      type="submit"
+                      className="w-full h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+                      disabled={loading}
                     >
-                      Forgot password?
+                      {loading ? (
+                        <>
+                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                          Creating Account...
+                        </>
+                      ) : (
+                        <>
+                          <UserPlus className="h-4 w-4 mr-2" />
+                          Create Account
+                        </>
+                      )}
                     </Button>
-                  </div>
+                  </form>
+                </TabsContent>
+              </Tabs>
 
-                  <Button
-                    type="submit"
-                    className="w-full h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 dark:from-red-500 dark:to-red-600 dark:hover:from-red-600 dark:hover:to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
-                    disabled={loading}
-                  >
-                    {loading ? (
-                      <>
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Signing in...
-                      </>
-                    ) : (
-                      <>
-                        <User className="h-4 w-4 mr-2" />
-                        Sign In
-                      </>
-                    )}
-                  </Button>
-                </form>
-              </TabsContent>
-
-              <TabsContent value="register">
-                <form onSubmit={handleRegister} className="space-y-6 mt-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="register-name" className="text-foreground dark:text-white">Full Name</Label>
-                    <div className="relative">
-                      <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="register-name"
-                        type="text"
-                        placeholder="Enter your full name"
-                        value={registerName}
-                        onChange={(e) => setRegisterName(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        required
-                        disabled={loading}
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="register-email" className="text-foreground dark:text-white">Email Address</Label>
-                    <div className="relative">
-                      <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="register-email"
-                        type="email"
-                        placeholder="your@email.com"
-                        value={registerEmail}
-                        onChange={(e) => setRegisterEmail(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        required
-                        disabled={loading}
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="register-phone">
-                      <span className="text-foreground dark:text-white">Phone Number (Optional)</span>
-                    </Label>
-                    <div className="relative">
-                      <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="register-phone"
-                        type="tel"
-                        placeholder="+91-9876543210"
-                        value={registerPhone}
-                        onChange={(e) => setRegisterPhone(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        disabled={loading}
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="register-password" className="text-foreground dark:text-white">Password</Label>
-                    <div className="relative">
-                      <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="register-password"
-                        type={showRegisterPassword ? "text" : "password"}
-                        placeholder="Create a strong password"
-                        value={registerPassword}
-                        onChange={(e) => setRegisterPassword(e.target.value)}
-                        className="pl-10 pr-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
-                        required
-                        disabled={loading}
-                        minLength={6}
-                      />
-                      <Button
-                        type="button"
-                        variant="ghost"
-                        size="sm"
-                        className="absolute right-1 top-1 h-10 w-10 p-0"
-                        onClick={() =>
-                          setShowRegisterPassword(!showRegisterPassword)
-                        }
-                        disabled={loading}
-                      >
-                        {showRegisterPassword ? (
-                          <EyeOff className="h-4 w-4" />
-                        ) : (
-                          <Eye className="h-4 w-4" />
-                        )}
-                      </Button>
-                    </div>
-                  </div>
-                  <Button
-                    type="submit"
-                    className="w-full h-12 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 dark:from-red-500 dark:to-red-600 dark:hover:from-red-600 dark:hover:to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
-                    disabled={loading}
-                  >
-                    {loading ? (
-                      <>
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Creating Account...
-                      </>
-                    ) : (
-                      <>
-                        <UserPlus className="h-4 w-4 mr-2" />
-                        Create Account
-                      </>
-                    )}
-                  </Button>
-                </form>
-              </TabsContent>
-            </Tabs>
-
-            <div className="mt-6 text-center">
-              <p className="text-sm text-muted-foreground">
-                By continuing, you agree to our{" "}
-                <Link to="/terms" className="text-red-600 dark:text-red-400 hover:underline">
-                  Terms of Service
-                </Link>{" "}
-                and{" "}
-                <Link to="/privacy" className="text-red-600 dark:text-red-400 hover:underline">
-                  Privacy Policy
-                </Link>
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+              <div className="mt-6 text-center">
+                <p className="text-sm text-muted-foreground">
+                  By continuing, you agree to our{" "}
+                  <Link to="/terms" className="text-red-600 hover:underline">
+                    Terms of Service
+                  </Link>{" "}
+                  and{" "}
+                  <Link to="/privacy" className="text-red-600 hover:underline">
+                    Privacy Policy
+                  </Link>
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

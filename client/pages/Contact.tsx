@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      value: "contact@busनियोजक.com",
+      value: "busniyojak.com",
       description: "Get in touch via email",
       color: "text-primary",
     },
@@ -60,7 +60,7 @@ export default function Contact() {
       title: "Call Us",
       value: "+91-9876-543-210",
       description: "24/7 customer support",
-      color: "text-green-600 dark:text-green-400",
+      color: "text-green-600",
     },
     {
       icon: MapPin,
@@ -74,7 +74,7 @@ export default function Contact() {
       title: "Office Hours",
       value: "Mon-Fri 9AM-6PM",
       description: "Business hours",
-      color: "text-blue-600 dark:text-blue-400",
+      color: "text-blue-600",
     },
   ];
 
@@ -83,78 +83,74 @@ export default function Contact() {
       icon: Bus,
       title: "Bus Operations",
       description: "Route queries, schedule information, and bus tracking",
-      email: "operations@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-red-500 to-orange-500",
     },
     {
       icon: HeadphonesIcon,
       title: "Technical Support",
       description: "App issues, website problems, and technical assistance",
-      email: "support@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: MessageCircle,
       title: "General Inquiries",
       description: "General questions, feedback, and suggestions",
-      email: "hello@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: Globe,
       title: "Partnership",
       description: "Business partnerships and collaboration opportunities",
-      email: "partnership@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-purple-500 to-pink-500",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white dark:bg-gray-950">
+      <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6">
               Get in <span className="text-[rgba(220,38,38,1)]">Touch</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Have questions about{" "}
-              <span className="text-black dark:text-white font-semibold">
-                Bus
-              </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
-                नियोजक
-              </span>
-              ? Need support? Want to partner with us? We're here to help and
-              excited to connect with you!
+              <span className="text-black font-semibold">&nbsp;Bus</span>
+              <span className="text-red-600 font-semibold">नियोजक</span>? Need
+              support? Want to partner with us? We're here to help and excited
+              to connect with you!
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-12 bg-background dark:bg-gray-950">
+      <section className="py-8 sm:py-12 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="text-center border-0 shadow-lg bg-white/90 dark:bg-gray-900/80 transition-shadow hover:shadow-2xl rounded-2xl"
+                className="text-center border-0 shadow-lg bg-white/90 transition-shadow hover:shadow-2xl rounded-2xl"
               >
                 <CardContent className="pt-10 pb-8">
                   <div
-                    className={`bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20 rounded-full p-5 w-20 h-20 mx-auto mb-5 flex items-center justify-center shadow-md`}
+                    className={`bg-gradient-to-br from-primary/10 to-accent/10 rounded-full p-3 sm:p-4 lg:p-5 w-16 sm:w-18 lg:w-20 h-16 sm:h-18 lg:h-20 mx-auto mb-3 sm:mb-4 lg:mb-5 flex items-center justify-center shadow-md`}
                   >
                     <info.icon className={`h-9 w-9 ${info.color}`} />
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                  <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                     {info.title}
                   </h3>
-                  <p className="text-foreground font-medium mb-1 dark:text-gray-200">
+                  <p className="text-sm sm:text-base text-foreground font-medium mb-1">
                     {info.value}
                   </p>
                   <p className="text-muted-foreground text-sm">
@@ -168,12 +164,12 @@ export default function Contact() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <Card className="shadow-xl border-0 bg-gradient-to-br from-white to-primary/10 dark:from-gray-900 dark:to-primary/10 rounded-2xl">
+              <Card className="shadow-xl border-0 bg-gradient-to-br from-white to-primary/10 rounded-2xl">
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center space-x-3">
                     <div className="bg-primary text-primary-foreground p-3 rounded-lg shadow-md">
@@ -260,7 +256,7 @@ export default function Contact() {
             {/* Support Types */}
             <div className="space-y-6">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-foreground dark:text-white mb-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
                   Choose Your{" "}
                   <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Support Type
@@ -274,7 +270,7 @@ export default function Contact() {
               {supportTypes.map((type, index) => (
                 <Card
                   key={index}
-                  className="shadow-lg border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 hover:shadow-2xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
+                  className="shadow-lg border-0 bg-gradient-to-br from-white to-blue-50 hover:shadow-2xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
@@ -284,7 +280,7 @@ export default function Contact() {
                         <type.icon className="h-6 w-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                        <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                           {type.title}
                         </h3>
                         <p className="text-muted-foreground text-sm mb-3">
@@ -307,16 +303,12 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-background dark:bg-gray-950">
+      <section className="py-8 sm:py-12 lg:py-16 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
-              <span className="text-blue-600 dark:text-blue-400">
-                Frequently Asked
-              </span>{" "}
-              <span className="text-purple-600 dark:text-purple-400">
-                Questions
-              </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              <span className="text-blue-600">Frequently Asked</span>{" "}
+              <span className="text-purple-600">Questions</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Quick answers to common questions
@@ -348,7 +340,7 @@ export default function Contact() {
             ].map((faq, index) => (
               <Card
                 key={index}
-                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl"
+                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 rounded-2xl"
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-3 text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -388,13 +380,12 @@ export default function Contact() {
       </section>
 
       {/* Advertisement Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
-              Partner with{" "}
-              <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Partner with <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Reach thousands of daily commuters and grow your business with our
@@ -407,8 +398,8 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-3 flex-shrink-0">
-                    <Users className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  <div className="bg-blue-100 rounded-full p-3 flex-shrink-0">
+                    <Users className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -421,8 +412,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-3 flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -435,8 +426,8 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-3 flex-shrink-0">
-                    <TrendingUp className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                  <div className="bg-purple-100 rounded-full p-3 flex-shrink-0">
+                    <TrendingUp className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">
@@ -453,7 +444,7 @@ export default function Contact() {
 
             {/* Right side - CTA Card */}
             <div>
-              <Card className="shadow-2xl border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/20 rounded-3xl overflow-hidden">
+              <Card className="shadow-2xl border-0 bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
