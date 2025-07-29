@@ -255,7 +255,7 @@ export default function FAQ() {
                   >
                     <category.icon className="h-8 w-8" />
                   </div>
-                  <CardTitle className="text-lg">{category.title}</CardTitle>
+                  <CardTitle className="text-lg text-white">{category.title}</CardTitle>
                   <p className="text-sm text-muted-foreground">
                     {category.questions.length} questions answered
                   </p>
