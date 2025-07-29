@@ -60,7 +60,7 @@ export default function TermsOfService() {
               <p className="text-muted-foreground">
                 By accessing and using Bus नियोजक ("the Service"), you accept and agree to be bound by the terms and provision of this agreement.
               </p>
-              <div className="bg-blue-50  p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+              <div className="bg-blue-50  p-4 rounded-lg border border-blue-200 ">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5" />
                   <div>
