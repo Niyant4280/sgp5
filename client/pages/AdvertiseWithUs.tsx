@@ -182,7 +182,7 @@ export default function AdvertiseWithUs() {
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Advertising Formats
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -238,7 +238,7 @@ export default function AdvertiseWithUs() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Pricing Plans
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -303,7 +303,7 @@ export default function AdvertiseWithUs() {
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Partnership Requirements
             </h2>
             <p className="text-xl text-muted-foreground">
