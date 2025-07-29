@@ -155,8 +155,8 @@ export default function Navigation() {
                 to="/routes"
                 className={`flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium ${
                   isActive("/routes")
-                    ? "bg-red-600 dark:bg-red-500 text-white"
-                    : "text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-white hover:bg-red-100 dark:hover:bg-gray-700"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-700 hover:text-red-700 hover:bg-red-100"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
