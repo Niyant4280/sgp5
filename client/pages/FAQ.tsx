@@ -227,7 +227,7 @@ export default function FAQ() {
                 <HelpCircle className="h-3 w-3 mr-1" />
                 Instant Answers
               </Badge>
-              <Badge className="text-sm bg-green-500 text-white hover:bg-green-600 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-black text-white hover:bg-gray-800 transition-colors px-4 py-2 font-semibold">
                 <MessageCircle className="h-3 w-3 mr-1" />
                 24/7 Support
               </Badge>
