@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
 
         {/* Content */}
         <div className="space-y-8">
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Eye className="h-6 w-6 text-blue-600" />
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Database className="h-6 w-6 text-green-600" />
@@ -125,7 +125,7 @@ export default function PrivacyPolicy() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Users className="h-6 w-6 text-purple-600" />
@@ -158,7 +158,7 @@ export default function PrivacyPolicy() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Lock className="h-6 w-6 text-red-600" />
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
                   <h4 className="font-semibold mb-3 text-primary">Technical Safeguards</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• End-to-end encryption for sensitive data</li>
-                    <li>��� Secure HTTPS connections</li>
+                    <li>• Secure HTTPS connections</li>
                     <li>• Regular security audits and updates</li>
                     <li>• Access controls and authentication</li>
                   </ul>
@@ -189,7 +189,7 @@ export default function PrivacyPolicy() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Shield className="h-6 w-6 text-blue-600" />
@@ -239,7 +239,7 @@ export default function PrivacyPolicy() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-0 bg-white dark:bg-gray-900 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-white  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <AlertTriangle className="h-6 w-6 text-orange-600" />
