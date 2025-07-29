@@ -114,9 +114,9 @@ export default function Login() {
         {/* Hero Section */}
         <div className="w-full max-w-6xl">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Welcome to <span className="text-black dark:text-white">Bus</span>
-              <span className="text-red-600 dark:text-red-400">नियोजक</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+              Welcome to <span className="text-black">Bus</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Join thousands of commuters who trust us for their daily travel needs
