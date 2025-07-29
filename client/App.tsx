@@ -74,15 +74,6 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Initialize React root with HMR support
-const container = document.getElementById("root")!;
-
-// Check if we're in development mode and handle HMR properly
-if (!container._reactRootContainer) {
-  const root = createRoot(container);
-  (container as any)._reactRootContainer = root;
-  root.render(<App />);
-} else {
-  // Re-render for HMR
-  (container as any)._reactRootContainer.render(<App />);
-}
+// Initialize React app
+const root = createRoot(document.getElementById("root")!);
+root.render(<App />);
