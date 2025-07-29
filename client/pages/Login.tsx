@@ -116,7 +116,7 @@ export default function Login() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               Welcome to <span className="text-black">Bus</span>
-              <span className="text-red-600">���ियोजक</span>
+              <span className="text-red-600">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Join thousands of commuters who trust us for their daily travel needs
@@ -128,7 +128,7 @@ export default function Login() {
           style={{ borderRadius: "24px" }}
         >
           <CardHeader className="text-center">
-            <div className="bg-gradient-to-br from-red-600 to-red-800 dark:from-red-500 dark:to-red-700 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-2xl">
+            <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-2xl">
               <Bus className="h-10 w-10" />
             </div>
             <CardTitle className="text-2xl font-bold text-foreground dark:text-white">
