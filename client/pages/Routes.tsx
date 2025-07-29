@@ -42,7 +42,7 @@ export default function RoutesPage() {
       <Navigation />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
-        <div className="rounded-3xl bg-primary text-white shadow-xl px-8 py-12 mb-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="rounded-3xl bg-[rgba(220,38,38,1)] text-white shadow-xl px-8 py-12 mb-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-3 justify-center md:justify-start">
               <NavigationIcon className="h-9 w-9 text-white" />
@@ -103,4 +103,4 @@ export default function RoutesPage() {
       </div>
     </div>
   );
-} 
+}
