@@ -291,9 +291,9 @@ export default function Index() {
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90">
-            Join thousands of users already using{" "}
+            Join thousands of users already using&nbsp;
             <span className="font-bold text-white">Bus</span>
-            <span className="font-bold text-red-200">नियोजक</span> for their
+            <span className="font-bold text-white">नियोजक</span> for their
             daily transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
