@@ -121,12 +121,12 @@ export default function Contact() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6">
               Get in <span className="text-[rgba(220,38,38,1)]">Touch</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
               Have questions about{" "}
-              <span className="text-black dark:text-white font-semibold">
+              <span className="text-black font-semibold">
                 Bus
               </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
+              <span className="text-red-600 font-semibold">
                 नियोजक
               </span>
               ? Need support? Want to partner with us? We're here to help and
