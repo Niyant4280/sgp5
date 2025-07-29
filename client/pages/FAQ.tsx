@@ -349,7 +349,7 @@ export default function FAQ() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+              className="bg-white text-black hover:bg-gray-50 hover:text-gray-800 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
               asChild
             >
               <a href="tel:+919876543210">
