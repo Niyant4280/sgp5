@@ -104,7 +104,7 @@ export default function Contact() {
       icon: Globe,
       title: "Partnership",
       description: "Business partnerships and collaboration opportunities",
-      email: "partnership@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-purple-500 to-pink-500",
     },
   ];
