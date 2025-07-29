@@ -136,7 +136,7 @@ export default function TermsOfService() {
                     <h4 className="font-semibold text-yellow-800  mb-1">
                       Service Disclaimer
                     </h4>
-                    <p className="text-sm text-yellow-700 dark:text-yellow-300">
+                    <p className="text-sm text-yellow-700 ">
                       While we strive for accuracy, bus schedules and real-time information may vary due to traffic, weather, or operational changes.
                     </p>
                   </div>
