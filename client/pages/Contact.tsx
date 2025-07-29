@@ -83,7 +83,7 @@ export default function Contact() {
       icon: Bus,
       title: "Bus Operations",
       description: "Route queries, schedule information, and bus tracking",
-      email: "operations@busनियोजक.com",
+      email: "busniyojak@gmail.com",
       color: "from-red-500 to-orange-500",
     },
     {
@@ -104,7 +104,7 @@ export default function Contact() {
       icon: Globe,
       title: "Partnership",
       description: "Business partnerships and collaboration opportunities",
-      email: "partnership@busनियोजक.com",
+      email: "partnership@busनि��ोजक.com",
       color: "from-purple-500 to-pink-500",
     },
   ];
