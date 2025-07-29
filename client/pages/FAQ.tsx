@@ -223,7 +223,7 @@ export default function FAQ() {
               . Can't find what you're looking for? Contact our support team!
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge className="text-sm bg-red-700 text-white hover:bg-red-800 transition-colors px-4 py-2 font-semibold">
+              <Badge className="text-sm bg-white text-red-500 hover:bg-gray-50 transition-colors px-4 py-2 font-semibold">
                 <HelpCircle className="h-3 w-3 mr-1" />
                 Instant Answers
               </Badge>
