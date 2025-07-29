@@ -305,7 +305,7 @@ export default function Index() {
             >
               <Link to="/search">
                 <Search className="h-5 w-5 mr-2" />
-                Start Searching
+                <span className="text-[rgba(220,38,38,1)]">Start Searching</span>
               </Link>
             </Button>
           </div>
