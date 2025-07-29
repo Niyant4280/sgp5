@@ -140,7 +140,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                   <Button
                     type="submit"
                     disabled={!busNumber.trim()}
-                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-red-500 to-black hover:from-red-600 hover:to-gray-900 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Zap className="h-5 w-5 mr-2" />
                     Track This Bus
