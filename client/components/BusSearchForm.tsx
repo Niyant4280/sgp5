@@ -36,25 +36,37 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
           <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-8 shadow-lg">
             <Search className="h-16 w-16 mx-auto text-white" />
           </div>
-          <CardTitle className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-lg">Find Your Bus</CardTitle>
+          <CardTitle className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-lg">
+            Find Your Bus
+          </CardTitle>
           <p className="text-xl md:text-2xl mb-10 text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
-            Search for your next ride by bus number or plan your route with ease. Fast, accurate, and always up-to-date!
+            Search for your next ride by bus number or plan your route with
+            ease. Fast, accurate, and always up-to-date!
           </p>
         </CardHeader>
         <CardContent className="w-full flex flex-col gap-8">
           <Tabs defaultValue="number" className="w-full">
             <TabsList className="flex w-full justify-center gap-4 bg-white/10 backdrop-blur-sm p-2 rounded-2xl mb-8 shadow-lg">
-              <TabsTrigger value="number" className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]">
+              <TabsTrigger
+                value="number"
+                className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]"
+              >
                 <Search className="h-5 w-5" />
                 <span>By Bus Number</span>
               </TabsTrigger>
-              <TabsTrigger value="route" className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]">
+              <TabsTrigger
+                value="route"
+                className="flex items-center space-x-3 px-6 py-4 rounded-xl font-bold text-lg bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 border-0 shadow-md data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-xl data-[state=active]:scale-[1.05]"
+              >
                 <MapPin className="h-5 w-5" />
                 <span>By Route</span>
               </TabsTrigger>
             </TabsList>
             <TabsContent value="number" className="mt-4">
-              <form onSubmit={handleBusNumberSearch} className="flex flex-col gap-6 items-center">
+              <form
+                onSubmit={handleBusNumberSearch}
+                className="flex flex-col gap-6 items-center"
+              >
                 <Input
                   id="bus-number"
                   type="text"
@@ -74,7 +86,10 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
               </form>
             </TabsContent>
             <TabsContent value="route" className="mt-4">
-              <form onSubmit={handleRouteSearch} className="flex flex-col gap-6 items-center">
+              <form
+                onSubmit={handleRouteSearch}
+                className="flex flex-col gap-6 items-center"
+              >
                 <Input
                   id="from-stop"
                   type="text"

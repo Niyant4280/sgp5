@@ -122,7 +122,15 @@ export default function Contact() {
               Get in <span className="text-primary">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Have questions about <span className="text-black dark:text-white font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span>? Need support? Want to partner with us? We're here to help and excited to connect with you!
+              Have questions about{" "}
+              <span className="text-black dark:text-white font-semibold">
+                Bus
+              </span>
+              <span className="text-red-600 dark:text-red-400 font-semibold">
+                नियोजक
+              </span>
+              ? Need support? Want to partner with us? We're here to help and
+              excited to connect with you!
             </p>
           </div>
         </div>
@@ -133,12 +141,19 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg bg-white/90 dark:bg-gray-900/80 transition-shadow hover:shadow-2xl rounded-2xl">
+              <Card
+                key={index}
+                className="text-center border-0 shadow-lg bg-white/90 dark:bg-gray-900/80 transition-shadow hover:shadow-2xl rounded-2xl"
+              >
                 <CardContent className="pt-10 pb-8">
-                  <div className={`bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20 rounded-full p-5 w-20 h-20 mx-auto mb-5 flex items-center justify-center shadow-md`}>
+                  <div
+                    className={`bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20 rounded-full p-5 w-20 h-20 mx-auto mb-5 flex items-center justify-center shadow-md`}
+                  >
                     <info.icon className={`h-9 w-9 ${info.color}`} />
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">{info.title}</h3>
+                  <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                    {info.title}
+                  </h3>
                   <p className="text-foreground font-medium mb-1 dark:text-gray-200">
                     {info.value}
                   </p>
@@ -246,7 +261,10 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="mb-8">
                 <h2 className="text-3xl font-bold text-foreground dark:text-white mb-4">
-                  Choose Your <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Support Type</span>
+                  Choose Your{" "}
+                  <span className="text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Support Type
+                  </span>
                 </h2>
                 <p className="text-muted-foreground">
                   Select the most appropriate category for faster assistance
@@ -260,11 +278,15 @@ export default function Contact() {
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className={`bg-gradient-to-br ${type.color} text-white p-4 rounded-xl shadow-md flex-shrink-0`}>
+                      <div
+                        className={`bg-gradient-to-br ${type.color} text-white p-4 rounded-xl shadow-md flex-shrink-0`}
+                      >
                         <type.icon className="h-6 w-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">{type.title}</h3>
+                        <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                          {type.title}
+                        </h3>
                         <p className="text-muted-foreground text-sm mb-3">
                           {type.description}
                         </p>
@@ -289,7 +311,12 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
-              <span className="text-blue-600 dark:text-blue-400">Frequently Asked</span> <span className="text-purple-600 dark:text-purple-400">Questions</span>
+              <span className="text-blue-600 dark:text-blue-400">
+                Frequently Asked
+              </span>{" "}
+              <span className="text-purple-600 dark:text-purple-400">
+                Questions
+              </span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Quick answers to common questions
@@ -319,7 +346,10 @@ export default function Contact() {
                   "We're constantly expanding our coverage. Currently, we track 50+ major routes and are adding new routes every month based on user demand.",
               },
             ].map((faq, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl">
+              <Card
+                key={index}
+                className="shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20 rounded-2xl"
+              >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-3 text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {faq.question}
@@ -362,10 +392,13 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
-              Partner with <span className="text-black dark:text-white">Bus</span><span className="text-red-600 dark:text-red-400">नियोजक</span>
+              Partner with{" "}
+              <span className="text-black dark:text-white">Bus</span>
+              <span className="text-red-600 dark:text-red-400">नियोजक</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Reach thousands of daily commuters and grow your business with our advertising solutions
+              Reach thousands of daily commuters and grow your business with our
+              advertising solutions
             </p>
           </div>
 
@@ -378,8 +411,13 @@ export default function Contact() {
                     <Users className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Massive Reach</h3>
-                    <p className="text-muted-foreground">Connect with over 10,000+ daily active users across Delhi NCR</p>
+                    <h3 className="text-lg font-semibold mb-2">
+                      Massive Reach
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Connect with over 10,000+ daily active users across Delhi
+                      NCR
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -387,8 +425,13 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Targeted Advertising</h3>
-                    <p className="text-muted-foreground">Place ads on specific routes and bus stops for maximum relevance</p>
+                    <h3 className="text-lg font-semibold mb-2">
+                      Targeted Advertising
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Place ads on specific routes and bus stops for maximum
+                      relevance
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -396,8 +439,13 @@ export default function Contact() {
                     <TrendingUp className="h-6 w-6 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Real-time Analytics</h3>
-                    <p className="text-muted-foreground">Track your ad performance with detailed insights and metrics</p>
+                    <h3 className="text-lg font-semibold mb-2">
+                      Real-time Analytics
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Track your ad performance with detailed insights and
+                      metrics
+                    </p>
                   </div>
                 </div>
               </div>
@@ -411,16 +459,21 @@ export default function Contact() {
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                       <Globe className="h-10 w-10" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3">Ready to Advertise?</h3>
+                    <h3 className="text-2xl font-bold mb-3">
+                      Ready to Advertise?
+                    </h3>
                     <p className="text-muted-foreground mb-6">
-                      Join leading brands who trust us to deliver their message to the right audience
+                      Join leading brands who trust us to deliver their message
+                      to the right audience
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span className="text-sm">Multiple ad formats available</span>
+                      <span className="text-sm">
+                        Multiple ad formats available
+                      </span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-600" />

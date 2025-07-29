@@ -73,7 +73,8 @@ export default function Index() {
               <span className="text-red-600 dark:text-red-400">नियोजक</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Plan your journey, discover the best routes, and experience seamless bus travel—all in one place.
+              Plan your journey, discover the best routes, and experience
+              seamless bus travel—all in one place.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge className="text-sm bg-blue-500 dark:bg-gray-800 text-white hover:bg-blue-600 dark:hover:bg-gray-700 transition-colors px-4 py-2 font-semibold">
@@ -180,10 +181,12 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose <span className="text-black dark:text-white">Bus</span><span className="text-red-600 dark:text-red-400">नियोजक</span>?
+              Why Choose <span className="text-black dark:text-white">Bus</span>
+              <span className="text-red-600 dark:text-red-400">नियोजक</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Smart tools and real-time insights for a smoother, more connected bus experience—for everyone.
+              Smart tools and real-time insights for a smoother, more connected
+              bus experience—for everyone.
             </p>
           </div>
 
@@ -227,7 +230,8 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Empowering users with helpful resources and working together to improve public transport for everyone.
+                  Empowering users with helpful resources and working together
+                  to improve public transport for everyone.
                 </p>
               </CardContent>
             </Card>
@@ -241,7 +245,8 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Get helpful tips and trends to make your daily commute smoother and more predictable.
+                  Get helpful tips and trends to make your daily commute
+                  smoother and more predictable.
                 </p>
               </CardContent>
             </Card>
@@ -255,7 +260,8 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Your data and journeys are protected with the latest security standards and privacy features.
+                  Your data and journeys are protected with the latest security
+                  standards and privacy features.
                 </p>
               </CardContent>
             </Card>
@@ -269,7 +275,8 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Stay informed with real-time notifications and quick updates for a hassle-free experience.
+                  Stay informed with real-time notifications and quick updates
+                  for a hassle-free experience.
                 </p>
               </CardContent>
             </Card>
@@ -284,8 +291,10 @@ export default function Index() {
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90">
-            Join thousands of users already using <span className="font-bold text-white">Bus</span><span className="font-bold text-red-200">नियोजक</span> for their daily
-            transportation needs.
+            Join thousands of users already using{" "}
+            <span className="font-bold text-white">Bus</span>
+            <span className="font-bold text-red-200">नियोजक</span> for their
+            daily transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -313,11 +322,13 @@ export default function Index() {
                   <Bus className="h-6 w-6 text-white" />
                 </div>
                 <span className="text-xl font-bold text-foreground">
-                  <span className="text-black dark:text-white">Bus</span><span className="text-primary">नियोजक</span>
+                  <span className="text-black dark:text-white">Bus</span>
+                  <span className="text-primary">नियोजक</span>
                 </span>
               </div>
               <p className="text-muted-foreground mb-4">
-                Your trusted partner for seamless, smart, and reliable bus journeys.
+                Your trusted partner for seamless, smart, and reliable bus
+                journeys.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm">
@@ -332,17 +343,26 @@ export default function Index() {
               <h3 className="font-semibold mb-4">Features</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/search" className="hover:text-foreground transition-colors hover:text-red-600">
+                  <Link
+                    to="/search"
+                    className="hover:text-foreground transition-colors hover:text-red-600"
+                  >
                     Bus Search
                   </Link>
                 </li>
                 <li>
-                  <Link to="/routes" className="hover:text-foreground transition-colors hover:text-red-600">
+                  <Link
+                    to="/routes"
+                    className="hover:text-foreground transition-colors hover:text-red-600"
+                  >
                     Route Planning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/advertise-with-us" className="hover:text-foreground transition-colors hover:text-red-600">
+                  <Link
+                    to="/advertise-with-us"
+                    className="hover:text-foreground transition-colors hover:text-red-600"
+                  >
                     Advertisement
                   </Link>
                 </li>
@@ -352,12 +372,18 @@ export default function Index() {
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/faq" className="hover:text-foreground transition-colors hover:text-red-600">
+                  <Link
+                    to="/faq"
+                    className="hover:text-foreground transition-colors hover:text-red-600"
+                  >
                     Help & FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="hover:text-foreground transition-colors hover:text-red-600">
+                  <Link
+                    to="/contact"
+                    className="hover:text-foreground transition-colors hover:text-red-600"
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -365,9 +391,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>
-              Empowering your journey. Made with care for every commuter.
-            </p>
+            <p>Empowering your journey. Made with care for every commuter.</p>
           </div>
         </div>
       </footer>
