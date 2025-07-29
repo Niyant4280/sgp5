@@ -137,7 +137,7 @@ export default function PrivacyPolicy() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-green-800 dark:text-green-200 mb-1">
+                    <h4 className="font-semibold text-green-800  mb-1">
                       We DO NOT sell your personal information
                     </h4>
                     <p className="text-sm text-green-700 dark:text-green-300">
