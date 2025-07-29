@@ -369,7 +369,7 @@ export default function AdvertiseWithUs() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-green-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-green-600 font-bold text-sm">
                         2
                       </span>
