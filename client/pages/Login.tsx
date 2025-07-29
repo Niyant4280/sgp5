@@ -184,7 +184,7 @@ export default function Login() {
                         placeholder="your@email.com"
                         value={loginEmail}
                         onChange={(e) => setLoginEmail(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         required
                         disabled={loading}
                       />
@@ -200,7 +200,7 @@ export default function Login() {
                         placeholder="Enter your password"
                         value={loginPassword}
                         onChange={(e) => setLoginPassword(e.target.value)}
-                        className="pl-10 pr-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 pr-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         required
                         disabled={loading}
                       />
@@ -280,7 +280,7 @@ export default function Login() {
                         placeholder="Enter your full name"
                         value={registerName}
                         onChange={(e) => setRegisterName(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         required
                         disabled={loading}
                       />
@@ -296,7 +296,7 @@ export default function Login() {
                         placeholder="your@email.com"
                         value={registerEmail}
                         onChange={(e) => setRegisterEmail(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         required
                         disabled={loading}
                       />
@@ -314,7 +314,7 @@ export default function Login() {
                         placeholder="+91-9876543210"
                         value={registerPhone}
                         onChange={(e) => setRegisterPhone(e.target.value)}
-                        className="pl-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         disabled={loading}
                       />
                     </div>
@@ -329,7 +329,7 @@ export default function Login() {
                         placeholder="Create a strong password"
                         value={registerPassword}
                         onChange={(e) => setRegisterPassword(e.target.value)}
-                        className="pl-10 pr-10 h-12 border-red-200 dark:border-red-800 focus:border-red-400 dark:focus:border-red-500 focus:ring-red-200 dark:focus:ring-red-800 rounded-xl hover:border-red-300 dark:hover:border-red-700 transition-colors bg-white dark:bg-gray-800 text-foreground dark:text-white"
+                        className="pl-10 pr-10 h-12 border-red-200 focus:border-red-400 focus:ring-red-200 rounded-xl hover:border-red-300 transition-colors bg-white text-foreground"
                         required
                         disabled={loading}
                         minLength={6}
