@@ -43,7 +43,7 @@ export default function RoutesPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/40 dark:from-background dark:via-background dark:to-background">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100/40 ">
       <Navigation />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
