@@ -249,7 +249,7 @@ export default function BusSearch() {
                 <div className="mt-6 p-4 bg-blue-50  rounded-lg border border-blue-200 ">
                   <div className="flex items-start space-x-3">
                     <div className="bg-blue-100  rounded-full p-2 mt-0.5">
-                      <Bus className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                      <Bus className="h-4 w-4 text-blue-600 " />
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-blue-900 dark:text-blue-100 mb-1">
