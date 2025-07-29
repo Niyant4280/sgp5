@@ -193,7 +193,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                     </div>
 
                     <div className="flex justify-center">
-                      <div className="bg-gradient-to-r from-red-500 to-black p-3 rounded-full shadow-lg">
+                      <div className="bg-gradient-to-r from-red-700 to-black p-3 rounded-full shadow-lg">
                         <ArrowRight className="h-5 w-5 text-white" />
                       </div>
                     </div>
