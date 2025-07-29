@@ -31,7 +31,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
 
   return (
     <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-      <Card className="w-full max-w-[993px] bg-[rgba(208,2,27,1)] text-white border-0 shadow-2xl p-16 flex flex-col items-center text-center rounded-3xl transform hover:scale-[1.02] transition-all duration-300 -ml-1">
+      <Card className="w-full max-w-[993px] bg-[rgba(220,38,38,1)] text-white border-0 shadow-2xl pt-4 px-8 pb-8 flex flex-col items-center text-center rounded-3xl transform hover:scale-[1.02] transition-all duration-300 -ml-1">
         <CardHeader className="mb-6 border-none">
           <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-8 shadow-lg flex flex-col justify-start items-center">
             <Search className="h-16 w-16 mx-auto text-white flex flex-col justify-start items-center" />
