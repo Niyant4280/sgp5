@@ -284,7 +284,7 @@ export default function Contact() {
                         <type.icon className="h-6 w-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold mb-2 text-foreground dark:text-white">
+                        <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                           {type.title}
                         </h3>
                         <p className="text-muted-foreground text-sm mb-3">
