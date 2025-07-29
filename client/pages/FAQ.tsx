@@ -214,10 +214,10 @@ export default function FAQ() {
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
               Find answers to common questions about{" "}
-              <span className="text-black dark:text-white font-semibold">
+              <span className="text-white font-semibold">
                 Bus
               </span>
-              <span className="text-red-600 dark:text-red-400 font-semibold">
+              <span className="text-white font-semibold">
                 नियोजक
               </span>
               . Can't find what you're looking for? Contact our support team!
