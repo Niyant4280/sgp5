@@ -197,7 +197,7 @@ export default function TermsOfService() {
                     <h4 className="font-semibold text-red-800  mb-1">
                       Important Notice
                     </h4>
-                    <p className="text-sm text-red-700 dark:text-red-300">
+                    <p className="text-sm text-red-700 ">
                       Bus नियोजक is not liable for any missed buses, delays, or travel disruptions resulting from the use of our service.
                     </p>
                   </div>
