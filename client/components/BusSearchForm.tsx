@@ -86,14 +86,14 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
             <div className="flex gap-1 sm:gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-1 sm:p-2">
               <button
                 onClick={() => setActiveTab("number")}
-                className={`flex-1 flex items-center justify-center gap-3 py-3 px-4 rounded-xl transition-all duration-300 ${
+                className={`flex-1 flex items-center justify-center gap-2 sm:gap-3 py-2 sm:py-3 px-2 sm:px-4 rounded-xl transition-all duration-300 ${
                   activeTab === "number"
                     ? "bg-white text-red-600 shadow-lg font-semibold"
                     : "text-white hover:bg-white/10"
                 }`}
               >
-                <Search className="h-5 w-5" />
-                <span>Bus Number</span>
+                <Search className="h-4 sm:h-5 w-4 sm:w-5" />
+                <span className="text-sm sm:text-base">Bus Number</span>
               </button>
               <button
                 onClick={() => setActiveTab("route")}
