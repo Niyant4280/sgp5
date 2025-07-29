@@ -255,7 +255,7 @@ export default function BusSearch() {
                       <h4 className="text-sm font-medium text-blue-900  mb-1">
                         How Bus Search Works
                       </h4>
-                      <ul className="text-xs text-blue-700 dark:text-blue-300 space-y-1">
+                      <ul className="text-xs text-blue-700  space-y-1">
                         <li>• Enter the exact bus number you want to find</li>
                         <li>• View the complete route and all stops</li>
                         <li>• See real-time location and next departure</li>
