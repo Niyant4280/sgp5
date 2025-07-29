@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
                     <h4 className="font-semibold text-green-800  mb-1">
                       We DO NOT sell your personal information
                     </h4>
-                    <p className="text-sm text-green-700 dark:text-green-300">
+                    <p className="text-sm text-green-700 ">
                       Your data is never sold to third parties for marketing purposes.
                     </p>
                   </div>
