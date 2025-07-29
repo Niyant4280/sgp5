@@ -276,7 +276,7 @@ export default function PrivacyPolicy() {
           </Card>
 
           {/* Contact Information */}
-          <Card className="shadow-lg border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-950/20 rounded-2xl">
+          <Card className="shadow-lg border-0 bg-gradient-to-br from-blue-50 to-purple-50  rounded-2xl">
             <CardHeader>
               <CardTitle className="flex items-center space-x-3">
                 <Mail className="h-6 w-6 text-blue-600" />
