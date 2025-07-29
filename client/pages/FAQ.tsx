@@ -303,7 +303,7 @@ export default function FAQ() {
                     <AccordionItem
                       key={index}
                       value={`${category.id}-${index}`}
-                      className="border-0 bg-gradient-to-br from-red-600 to-black rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="border-0 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       <AccordionTrigger className="px-6 py-4 hover:no-underline">
                         <span className="text-left font-semibold text-lg text-white">
