@@ -53,22 +53,22 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
                 <span>By Route</span>
               </TabsTrigger>
             </TabsList>
-            <TabsContent value="number" className="mt-2">
-              <form onSubmit={handleBusNumberSearch} className="flex flex-col gap-4 items-center">
+            <TabsContent value="number" className="mt-4">
+              <form onSubmit={handleBusNumberSearch} className="flex flex-col gap-6 items-center">
                 <Input
                   id="bus-number"
                   type="text"
                   placeholder="e.g., 101, AC-42, DLB-205"
                   value={busNumber}
                   onChange={(e) => setBusNumber(e.target.value)}
-                  className="text-lg max-w-xs text-center bg-white text-red-600 placeholder:text-red-300 border-2 border-red-200 focus:border-red-400 hover:border-red-300 transition-colors"
+                  className="text-xl h-16 max-w-md w-full text-center bg-white text-red-600 placeholder:text-red-300 border-0 focus:ring-4 focus:ring-white/30 hover:shadow-lg transition-all duration-200 rounded-2xl shadow-lg font-semibold"
                 />
                 <Button
                   type="submit"
-                  className="w-full max-w-xs bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-lg hover:scale-[1.05] transition-all duration-200 font-semibold border-2 border-white hover:border-red-300 disabled:opacity-70 disabled:grayscale-0 dark:bg-white dark:text-red-600 dark:hover:bg-red-50 dark:hover:text-red-700 dark:border-red-200 dark:hover:border-red-300"
+                  className="w-full max-w-md h-16 text-xl bg-white text-red-600 hover:bg-red-50 hover:text-red-700 hover:shadow-xl hover:scale-[1.05] transition-all duration-200 font-bold border-0 rounded-2xl shadow-lg disabled:opacity-70"
                   disabled={!busNumber.trim()}
                 >
-                  <Search className="h-4 w-4 mr-2" />
+                  <Search className="h-6 w-6 mr-3" />
                   Search Bus Route
                 </Button>
               </form>
