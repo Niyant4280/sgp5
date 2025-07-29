@@ -15,7 +15,41 @@ import {
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [user, setUser] = useState<{ name: string; email: string } | null>(null);
   const location = useLocation();
+
+  useEffect(() => {
+    // Check if user is logged in
+    const userToken = localStorage.getItem("userToken");
+    const adminToken = localStorage.getItem("adminToken");
+
+    if (adminToken) {
+      setIsAdmin(true);
+      setIsLoggedIn(true);
+      setUser({ name: "Admin", email: "admin@busniyojak.com" });
+    } else if (userToken) {
+      setIsLoggedIn(true);
+      setIsAdmin(false);
+      // In a real app, you'd fetch user data from the token
+      setUser({ name: "John Doe", email: "john@example.com" });
+    } else {
+      setIsLoggedIn(false);
+      setIsAdmin(false);
+      setUser(null);
+    }
+  }, [location]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("userToken");
+    localStorage.removeItem("adminToken");
+    localStorage.removeItem("adminRememberMe");
+    setIsLoggedIn(false);
+    setIsAdmin(false);
+    setUser(null);
+    window.location.href = "/";
+  };
 
   const isActive = (path: string) => location.pathname === path;
 
