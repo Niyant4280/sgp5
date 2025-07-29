@@ -206,7 +206,7 @@ export default function FAQ() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-6 flex flex-col">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 flex flex-col">
               <span className="text-gradient bg-gradient-to-r from-red-700 to-black bg-clip-text text-transparent">
                 Frequently Asked
               </span>
