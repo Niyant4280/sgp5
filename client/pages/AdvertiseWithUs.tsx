@@ -165,10 +165,10 @@ export default function AdvertiseWithUs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <stat.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <stat.icon className="h-8 w-8 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold text-foreground dark:text-white mb-2">
+                <div className="text-3xl font-bold text-foreground mb-2">
                   {stat.value}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
