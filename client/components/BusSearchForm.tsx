@@ -47,7 +47,7 @@ export default function BusSearchForm({ onSearch }: BusSearchFormProps) {
       {/* Header Section */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-3 mb-4">
-          <div className="bg-gradient-to-r from-red-500 to-black p-3 rounded-2xl shadow-lg">
+          <div className="bg-gradient-to-r from-red-600 to-red-800 p-3 rounded-2xl shadow-lg">
             <Search className="h-8 w-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-black to-red-600 dark:from-white dark:to-red-300 bg-clip-text text-transparent">
