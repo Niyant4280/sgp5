@@ -36,11 +36,11 @@ export default function PrivacyPolicy() {
           <div className="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
             <Shield className="h-10 w-10" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground  mb-4">
             Privacy Policy
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Your privacy is important to us. Learn how <span className="text-black dark:text-white font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> collects, uses, and protects your information.
+            Your privacy is important to us. Learn how <span className="text-black  font-semibold">Bus</span><span className="text-red-600 dark:text-red-400 font-semibold">नियोजक</span> collects, uses, and protects your information.
           </p>
           <p className="text-sm text-muted-foreground mt-4">
             Last updated: January 15, 2025
