@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import AdvertiseWithUs from "./pages/AdvertiseWithUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
