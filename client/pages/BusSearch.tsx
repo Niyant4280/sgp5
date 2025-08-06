@@ -246,16 +246,16 @@ export default function BusSearch() {
                   </Button>
                 </form>
 
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="mt-6 p-4 bg-blue-50  rounded-lg border border-blue-200 ">
                   <div className="flex items-start space-x-3">
-                    <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full p-2 mt-0.5">
-                      <Bus className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                    <div className="bg-blue-100  rounded-full p-2 mt-0.5">
+                      <Bus className="h-4 w-4 text-blue-600 " />
                     </div>
                     <div>
-                      <h4 className="text-sm font-medium text-blue-900 dark:text-blue-100 mb-1">
+                      <h4 className="text-sm font-medium text-blue-900  mb-1">
                         How Bus Search Works
                       </h4>
-                      <ul className="text-xs text-blue-700 dark:text-blue-300 space-y-1">
+                      <ul className="text-xs text-blue-700  space-y-1">
                         <li>• Enter the exact bus number you want to find</li>
                         <li>• View the complete route and all stops</li>
                         <li>• See real-time location and next departure</li>

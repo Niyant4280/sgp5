@@ -125,7 +125,7 @@ export default function AdvertiseWithUs() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
@@ -160,15 +160,15 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <stat.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <stat.icon className="h-8 w-8 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold text-foreground dark:text-white mb-2">
+                <div className="text-3xl font-bold text-foreground mb-2">
                   {stat.value}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
@@ -179,10 +179,10 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Ad Formats Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Advertising Formats
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -195,7 +195,7 @@ export default function AdvertiseWithUs() {
             {adFormats.map((format, index) => (
               <Card
                 key={index}
-                className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white dark:bg-gray-800 rounded-2xl"
+                className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white rounded-2xl"
               >
                 <CardHeader>
                   <div className="flex items-center space-x-4">
@@ -235,10 +235,10 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Pricing Plans
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -252,8 +252,8 @@ export default function AdvertiseWithUs() {
                 key={plan.id}
                 className={`relative shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ${
                   plan.popular
-                    ? "border-2 border-blue-500 scale-105 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950/20"
-                    : "border-0 bg-white dark:bg-gray-800"
+                    ? "border-2 border-blue-500 scale-105 bg-gradient-to-br from-white to-blue-50"
+                    : "border-0 bg-white"
                 }`}
               >
                 {plan.popular && (
@@ -286,7 +286,7 @@ export default function AdvertiseWithUs() {
                     className={`w-full ${
                       plan.popular
                         ? "bg-blue-600 hover:bg-blue-700 text-white"
-                        : "bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white"
+                        : "bg-gray-100 hover:bg-gray-200 text-gray-900"
                     }`}
                     onClick={() => setSelectedPlan(plan.id)}
                   >
@@ -300,10 +300,10 @@ export default function AdvertiseWithUs() {
       </section>
 
       {/* Requirements Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Partnership Requirements
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -313,7 +313,7 @@ export default function AdvertiseWithUs() {
           </div>
 
           <div className="space-y-8">
-            <Card className="shadow-lg border-0 bg-white dark:bg-gray-800 rounded-2xl">
+            <Card className="shadow-lg border-0 bg-white rounded-2xl">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
                   <Shield className="h-6 w-6 text-blue-600" />
@@ -346,7 +346,7 @@ export default function AdvertiseWithUs() {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-white dark:bg-gray-800 rounded-2xl">
+            <Card className="shadow-lg border-0 bg-white rounded-2xl">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
                   <Clock className="h-6 w-6 text-green-600" />
@@ -356,7 +356,7 @@ export default function AdvertiseWithUs() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 dark:bg-blue-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-blue-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-blue-600 font-bold text-sm">1</span>
                     </div>
                     <div>
@@ -369,7 +369,7 @@ export default function AdvertiseWithUs() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 dark:bg-green-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-green-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-green-600 font-bold text-sm">
                         2
                       </span>
@@ -384,7 +384,7 @@ export default function AdvertiseWithUs() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-purple-100 dark:bg-purple-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-purple-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-purple-600 font-bold text-sm">
                         3
                       </span>
@@ -399,7 +399,7 @@ export default function AdvertiseWithUs() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-orange-100 dark:bg-orange-900/20 rounded-full p-2 flex-shrink-0">
+                    <div className="bg-orange-100 rounded-full p-2 flex-shrink-0">
                       <span className="text-orange-600 font-bold text-sm">
                         4
                       </span>

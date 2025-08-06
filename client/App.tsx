@@ -11,6 +11,12 @@ import RoutesPage from "./pages/Routes";
 import Login from "./pages/Login";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminUsers from "./pages/AdminUsers";
+import AdminSettings from "./pages/AdminSettings";
+import UserDashboard from "./pages/UserDashboard";
+import UserProfile from "./pages/UserProfile";
+import TravelHistory from "./pages/TravelHistory";
+import UserSettings from "./pages/UserSettings";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AdvertiseWithUs from "./pages/AdvertiseWithUs";
@@ -32,9 +38,21 @@ const App = () => (
           <Route path="/search" element={<BusSearch />} />
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/login" element={<Login />} />
+
+          {/* User Routes */}
+          <Route path="/dashboard" element={<UserDashboard />} />
+          <Route path="/profile" element={<UserProfile />} />
+          <Route path="/history" element={<TravelHistory />} />
+          <Route path="/settings" element={<UserSettings />} />
+
+          {/* Admin Routes */}
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/users" element={<AdminUsers />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
+
+          {/* Public Pages */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/advertise-with-us" element={<AdvertiseWithUs />} />
